@@ -1,0 +1,93 @@
+[14:28:26] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:28:26] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[14:28:29] [Worker-Main-4/INFO]: Loaded 7 recipes
+[14:28:32] [Server thread/INFO]: Starting minecraft server version 1.17.1
+[14:28:32] [Server thread/INFO]: Loading properties
+[14:28:32] [Server thread/INFO]: This server is running Paper version git-Paper-88 (MC: 1.17.1) (Implementing API version 1.17.1-R0.1-SNAPSHOT) (Git: 648f607)
+[14:28:32] [Server thread/INFO]: Debug logging is disabled
+[14:28:32] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:28:32] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:28:33] [Server thread/INFO]: Default game type: SURVIVAL
+[14:28:33] [Server thread/INFO]: Generating keypair
+[14:28:33] [Server thread/INFO]: Starting Minecraft server on *:25569
+[14:28:33] [Server thread/INFO]: Using default channel type
+[14:28:35] [Server thread/INFO]: [Slimefun] Loading Slimefun vRC - 25 (git 847bbec6)
+[14:28:35] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:28:35] [Server thread/INFO]: Preparing level "world"
+[14:28:36] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:28:41] [Server thread/INFO]: Time elapsed: 4522 ms
+[14:28:41] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[14:28:45] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[14:28:45] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[14:28:45] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[14:28:45] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[14:28:45] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[14:28:45] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[14:28:45] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[14:28:45] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[14:28:45] [Server thread/INFO]: Time elapsed: 3972 ms
+[14:28:45] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[14:28:49] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[14:28:49] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[14:28:49] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[14:28:49] [Server thread/INFO]: Time elapsed: 4728 ms
+[14:28:49] [Server thread/INFO]: [Slimefun] Enabling Slimefun vRC - 25 (git 847bbec6)
+[14:28:49] [Server thread/INFO]: [Slimefun] Paper was detected! Performance optimizations have been applied.
+[14:28:49] [Server thread/INFO]: [Slimefun] Creating directories...
+[14:28:50] [Server thread/INFO]: [Slimefun] Loading language files...
+[14:28:51] [Server thread/INFO]: [Slimefun] Loaded language "en"
+[14:28:51] [Server thread/INFO]: [Slimefun] Available languages: en, de, fr, it, es, ru, uk, sv, cs, bg, pt-BR, hu, sk, vi, id, zh-CN, zh-TW, ja, ko, he, ar, tr, th, tl
+[14:28:51] [Server thread/INFO]: [Slimefun] Starting Auto-Updater...
+[14:28:51] [Server thread/INFO]: [Slimefun] Loading GEO-Resources...
+[14:28:53] [Server thread/INFO]: [Slimefun] Loading Tags...
+[14:28:53] [Server thread/INFO]: [Slimefun] Loading items...
+[14:28:56] [Server thread/INFO]: [Slimefun] Loading researches...
+[14:28:56] [Server thread/INFO]: [Slimefun] Loading Wiki pages...
+[14:28:56] [Server thread/INFO]: [Slimefun] Registering listeners...
+[14:28:56] [Server thread/INFO]: [Slimefun] Loading Third-Party plugin integrations...
+[14:28:56] [Server thread/INFO]: [Slimefun] Slimefun has finished loading in 6.92s
+[14:28:56] [Server thread/INFO]: Running delayed init tasks
+[14:28:57] [Server thread/INFO]: [Slimefun] Now running MetricsModule build #25
+[14:28:57] [Server thread/INFO]: [Slimefun] with a total of 19/19 chart(s)!
+[14:28:57] [Server thread/INFO]: [Slimefun] Metrics build #25 started.
+[14:28:57] [Server thread/INFO]: [Slimefun] Collecting Snapshots of all Recipes...
+[14:28:57] [Server thread/INFO]: [Slimefun] Found 1,058 Recipes!
+[14:28:57] [Updater Thread/INFO]: [Slimefun] Slimefun is already up to date!
+[14:28:57] [Server thread/INFO]: 
+[14:28:57] [Server thread/INFO]: ######################### - Slimefun vRC - 25 (git 847bbec6) - #########################
+[14:28:57] [Server thread/INFO]: 
+[14:28:57] [Server thread/INFO]: Successfully loaded 541 Items and 256 Researches
+[14:28:57] [Server thread/INFO]: ( 541 Items from Slimefun, 0 Items from 0 Addons )
+[14:28:57] [Server thread/INFO]: 
+[14:28:57] [Server thread/INFO]: Slimefun is an Open-Source project that is kept alive by a large community.
+[14:28:57] [Server thread/INFO]: Consider helping us maintain this project by contributing on GitHub!
+[14:28:57] [Server thread/INFO]: 
+[14:28:57] [Server thread/INFO]:  - Source Code:  https://github.com/Slimefun/Slimefun4
+[14:28:57] [Server thread/INFO]:  - Wiki:         https://github.com/Slimefun/Slimefun4/wiki
+[14:28:57] [Server thread/INFO]:  - Addons:       https://github.com/Slimefun/Slimefun4/wiki/Addons
+[14:28:57] [Server thread/INFO]:  - Bug Reports:  https://github.com/Slimefun/Slimefun4/issues
+[14:28:57] [Server thread/INFO]:  - Discord:      https://discord.gg/slimefun
+[14:28:57] [Server thread/INFO]: 
+[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world"
+[14:28:57] [Server thread/INFO]: [Slimefun] This may take a long time...
+[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 0ms)
+[14:28:57] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world"
+[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_nether"
+[14:28:57] [Server thread/INFO]: [Slimefun] This may take a long time...
+[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 0ms)
+[14:28:57] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world_nether"
+[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_the_end"
+[14:28:57] [Server thread/INFO]: [Slimefun] This may take a long time...
+[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 0ms)
+[14:28:57] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world_the_end"
+[14:28:57] [Server thread/INFO]: [CS-CoreLib2] Loading Protection Modules...
+[14:28:57] [Server thread/INFO]: [CS-CoreLib2] This may happen more than once.
+[14:28:57] [Server thread/INFO]: Done (25.162s)! For help, type "help"
+[14:28:57] [Server thread/INFO]: Timings Reset

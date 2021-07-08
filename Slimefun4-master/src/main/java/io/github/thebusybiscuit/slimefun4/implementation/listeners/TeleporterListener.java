@@ -1,0 +1,86 @@
+package io.github.thebusybiscuit.slimefun4.implementation.listeners;
+
+import java.util.UUID;
+
+import javax.annotation.Nonnull;
+
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.player.PlayerInteractEvent;
+
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunPlugin;
+import io.github.thebusybiscuit.slimefun4.implementation.items.elevator.ElevatorPlate;
+import io.github.thebusybiscuit.slimefun4.implementation.items.teleporter.AbstractTeleporterPlate;
+import io.github.thebusybiscuit.slimefun4.implementation.items.teleporter.Teleporter;
+import io.github.thebusybiscuit.slimefun4.implementation.items.teleporter.TeleporterPylon;
+import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
+
+/**
+ * This {@link Listener} is responsible for the {@link Teleporter} (and {@link ElevatorPlate}).
+ * 
+ * @author TheBusyBiscuit
+ * @author Sfiguz7
+ * @author SoSeDiK
+ *
+ */
+public class TeleporterListener implements Listener {
+
+    private final BlockFace[] faces = { BlockFace.NORTH, BlockFace.NORTH_EAST, BlockFace.EAST, BlockFace.SOUTH_EAST, BlockFace.SOUTH, BlockFace.SOUTH_WEST, BlockFace.WEST, BlockFace.NORTH_WEST };
+
+    public TeleporterListener(@Nonnull SlimefunPlugin plugin) {
+        plugin.getServer().getPluginManager().registerEvents(this, plugin);
+    }
+
+    @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+    public void onPressurePlateEnter(PlayerInteractEvent e) {
+        if (e.getAction() != Action.PHYSICAL || e.getClickedBlock() == null) {
+            return;
+        }
+
+        Block b = e.getClickedBlock();
+        SlimefunItem item = BlockStorage.check(b);
+        Player p = e.getPlayer();
+
+        if (item instanceof ElevatorPlate) {
+            // Pressure plate was an elevator
+            ElevatorPlate elevator = SlimefunItems.ELEVATOR_PLATE.getItem(ElevatorPlate.class);
+            elevator.openInterface(p, b);
+        } else if (item instanceof AbstractTeleporterPlate && ((AbstractTeleporterPlate) item).hasAccess(p, b)) {
+            // Pressure plate was a teleporter
+            SlimefunItem teleporter = BlockStorage.check(b.getRelative(BlockFace.DOWN));
+
+            if (teleporter instanceof Teleporter && checkForPylons(b.getRelative(BlockFace.DOWN))) {
+                Block block = b.getRelative(BlockFace.DOWN);
+                UUID owner = UUID.fromString(BlockStorage.getLocationInfo(block.getLocation(), "owner"));
+                SlimefunPlugin.getGPSNetwork().getTeleportationManager().openTeleporterGUI(p, owner, block);
+            }
+        }
+    }
+
+    /**
+     * This methoc checks if the given teleporter {@link Block} is surrounded
+     * by all the necessary {@link TeleporterPylon}s.
+     * 
+     * @param teleporter
+     *            The teleporter {@link Block}
+     * 
+     * @return Whether the teleporter is surrounded by pylons.
+     */
+    private boolean checkForPylons(@Nonnull Block teleporter) {
+        for (BlockFace face : faces) {
+            if (!(BlockStorage.check(teleporter.getRelative(face)) instanceof TeleporterPylon)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+}

@@ -1,0 +1,9 @@
+name: WondercraftSFAddon
+version: 1.0
+author: OblivionDevelop
+website: http://obliviondeveloping.tech/
+depend: [CS-CoreLib, Slimefun]
+
+api-version: 1.13
+
+main: tech.obliviondevelop.SF.Setup
