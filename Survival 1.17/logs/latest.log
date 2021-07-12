@@ -1,93 +1,204 @@
-[14:28:26] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[14:28:26] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[14:28:29] [Worker-Main-4/INFO]: Loaded 7 recipes
-[14:28:32] [Server thread/INFO]: Starting minecraft server version 1.17.1
-[14:28:32] [Server thread/INFO]: Loading properties
-[14:28:32] [Server thread/INFO]: This server is running Paper version git-Paper-88 (MC: 1.17.1) (Implementing API version 1.17.1-R0.1-SNAPSHOT) (Git: 648f607)
-[14:28:32] [Server thread/INFO]: Debug logging is disabled
-[14:28:32] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[14:28:32] [Server thread/INFO]: Using 4 threads for Netty based IO
-[14:28:33] [Server thread/INFO]: Default game type: SURVIVAL
-[14:28:33] [Server thread/INFO]: Generating keypair
-[14:28:33] [Server thread/INFO]: Starting Minecraft server on *:25569
-[14:28:33] [Server thread/INFO]: Using default channel type
-[14:28:35] [Server thread/INFO]: [Slimefun] Loading Slimefun vRC - 25 (git 847bbec6)
-[14:28:35] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[14:28:35] [Server thread/INFO]: Preparing level "world"
-[14:28:36] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[14:28:41] [Server thread/INFO]: Time elapsed: 4522 ms
-[14:28:41] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[14:28:45] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[14:28:45] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[14:28:45] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[14:28:45] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[14:28:45] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[14:28:45] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[14:28:45] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[14:28:45] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[14:28:45] [Server thread/INFO]: Time elapsed: 3972 ms
-[14:28:45] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[14:28:49] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[14:28:49] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[14:28:49] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[14:28:49] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[14:28:49] [Server thread/INFO]: Time elapsed: 4728 ms
-[14:28:49] [Server thread/INFO]: [Slimefun] Enabling Slimefun vRC - 25 (git 847bbec6)
-[14:28:49] [Server thread/INFO]: [Slimefun] Paper was detected! Performance optimizations have been applied.
-[14:28:49] [Server thread/INFO]: [Slimefun] Creating directories...
-[14:28:50] [Server thread/INFO]: [Slimefun] Loading language files...
-[14:28:51] [Server thread/INFO]: [Slimefun] Loaded language "en"
-[14:28:51] [Server thread/INFO]: [Slimefun] Available languages: en, de, fr, it, es, ru, uk, sv, cs, bg, pt-BR, hu, sk, vi, id, zh-CN, zh-TW, ja, ko, he, ar, tr, th, tl
-[14:28:51] [Server thread/INFO]: [Slimefun] Starting Auto-Updater...
-[14:28:51] [Server thread/INFO]: [Slimefun] Loading GEO-Resources...
-[14:28:53] [Server thread/INFO]: [Slimefun] Loading Tags...
-[14:28:53] [Server thread/INFO]: [Slimefun] Loading items...
-[14:28:56] [Server thread/INFO]: [Slimefun] Loading researches...
-[14:28:56] [Server thread/INFO]: [Slimefun] Loading Wiki pages...
-[14:28:56] [Server thread/INFO]: [Slimefun] Registering listeners...
-[14:28:56] [Server thread/INFO]: [Slimefun] Loading Third-Party plugin integrations...
-[14:28:56] [Server thread/INFO]: [Slimefun] Slimefun has finished loading in 6.92s
-[14:28:56] [Server thread/INFO]: Running delayed init tasks
-[14:28:57] [Server thread/INFO]: [Slimefun] Now running MetricsModule build #25
-[14:28:57] [Server thread/INFO]: [Slimefun] with a total of 19/19 chart(s)!
-[14:28:57] [Server thread/INFO]: [Slimefun] Metrics build #25 started.
-[14:28:57] [Server thread/INFO]: [Slimefun] Collecting Snapshots of all Recipes...
-[14:28:57] [Server thread/INFO]: [Slimefun] Found 1,058 Recipes!
-[14:28:57] [Updater Thread/INFO]: [Slimefun] Slimefun is already up to date!
-[14:28:57] [Server thread/INFO]: 
-[14:28:57] [Server thread/INFO]: ######################### - Slimefun vRC - 25 (git 847bbec6) - #########################
-[14:28:57] [Server thread/INFO]: 
-[14:28:57] [Server thread/INFO]: Successfully loaded 541 Items and 256 Researches
-[14:28:57] [Server thread/INFO]: ( 541 Items from Slimefun, 0 Items from 0 Addons )
-[14:28:57] [Server thread/INFO]: 
-[14:28:57] [Server thread/INFO]: Slimefun is an Open-Source project that is kept alive by a large community.
-[14:28:57] [Server thread/INFO]: Consider helping us maintain this project by contributing on GitHub!
-[14:28:57] [Server thread/INFO]: 
-[14:28:57] [Server thread/INFO]:  - Source Code:  https://github.com/Slimefun/Slimefun4
-[14:28:57] [Server thread/INFO]:  - Wiki:         https://github.com/Slimefun/Slimefun4/wiki
-[14:28:57] [Server thread/INFO]:  - Addons:       https://github.com/Slimefun/Slimefun4/wiki/Addons
-[14:28:57] [Server thread/INFO]:  - Bug Reports:  https://github.com/Slimefun/Slimefun4/issues
-[14:28:57] [Server thread/INFO]:  - Discord:      https://discord.gg/slimefun
-[14:28:57] [Server thread/INFO]: 
-[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world"
-[14:28:57] [Server thread/INFO]: [Slimefun] This may take a long time...
-[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 0ms)
-[14:28:57] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world"
-[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_nether"
-[14:28:57] [Server thread/INFO]: [Slimefun] This may take a long time...
-[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 0ms)
-[14:28:57] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world_nether"
-[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_the_end"
-[14:28:57] [Server thread/INFO]: [Slimefun] This may take a long time...
-[14:28:57] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 0ms)
-[14:28:57] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world_the_end"
-[14:28:57] [Server thread/INFO]: [CS-CoreLib2] Loading Protection Modules...
-[14:28:57] [Server thread/INFO]: [CS-CoreLib2] This may happen more than once.
-[14:28:57] [Server thread/INFO]: Done (25.162s)! For help, type "help"
-[14:28:57] [Server thread/INFO]: Timings Reset
+[17:40:23] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:40:24] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[17:40:27] [Worker-Main-5/INFO]: Loaded 7 recipes
+[17:40:30] [Server thread/INFO]: Starting minecraft server version 1.17.1
+[17:40:30] [Server thread/INFO]: Loading properties
+[17:40:30] [Server thread/INFO]: This server is running Paper version git-Paper-88 (MC: 1.17.1) (Implementing API version 1.17.1-R0.1-SNAPSHOT) (Git: 648f607)
+[17:40:31] [Server thread/INFO]: Debug logging is disabled
+[17:40:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:40:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:40:31] [Server thread/INFO]: Default game type: SURVIVAL
+[17:40:31] [Server thread/INFO]: Generating keypair
+[17:40:31] [Server thread/INFO]: Starting Minecraft server on *:25569
+[17:40:31] [Server thread/INFO]: Using default channel type
+[17:40:33] [Server thread/INFO]: [Slimefun] Loading Slimefun vRC - 25 (git 847bbec6)
+[17:40:33] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.0-dev+202-a098055
+[17:40:33] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:40:33] [Server thread/INFO]: Preparing level "world"
+[17:40:33] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:40:38] [Server thread/INFO]: Time elapsed: 4845 ms
+[17:40:38] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:40:42] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[17:40:42] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[17:40:42] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[17:40:42] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:42] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[17:40:42] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[17:40:42] [Server thread/INFO]: Time elapsed: 4032 ms
+[17:40:42] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[17:40:48] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[17:40:49] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[17:40:49] [Server thread/INFO]: Time elapsed: 6624 ms
+[17:40:49] [Server thread/INFO]: [Slimefun] Enabling Slimefun vRC - 25 (git 847bbec6)
+[17:40:49] [Server thread/INFO]: [Slimefun] Paper was detected! Performance optimizations have been applied.
+[17:40:49] [Server thread/INFO]: [Slimefun] Creating directories...
+[17:40:49] [Server thread/INFO]: [Slimefun] Loading language files...
+[17:40:51] [Server thread/INFO]: [Slimefun] Loaded language "en"
+[17:40:51] [Server thread/INFO]: [Slimefun] Available languages: en, de, fr, it, es, ru, uk, sv, cs, bg, pt-BR, hu, sk, vi, id, zh-CN, zh-TW, ja, ko, he, ar, tr, th, tl
+[17:40:51] [Server thread/INFO]: [Slimefun] Starting Auto-Updater...
+[17:40:51] [Server thread/INFO]: [Slimefun] Loading GEO-Resources...
+[17:40:54] [Server thread/INFO]: [Slimefun] Loading Tags...
+[17:40:54] [Server thread/INFO]: [Slimefun] Loading items...
+[17:40:56] [Server thread/INFO]: [Slimefun] Loading researches...
+[17:40:56] [Server thread/INFO]: [Slimefun] Loading Wiki pages...
+[17:40:56] [Server thread/INFO]: [Slimefun] Registering listeners...
+[17:40:56] [Server thread/INFO]: [Slimefun] Loading Third-Party plugin integrations...
+[17:40:56] [Server thread/INFO]: [Slimefun] Slimefun has finished loading in 6.95s
+[17:40:56] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.0-dev+202-a098055
+[17:40:56] [Server thread/INFO]: [Essentials] Creating config from template: plugins\Essentials\config.yml
+[17:40:57] [Server thread/INFO]: [Essentials] Creating config from template: plugins\Essentials\kits.yml
+[17:40:57] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[17:40:57] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[17:40:57] [Server thread/INFO]: [Essentials] Starting Essentials ban format conversion
+[17:40:57] [Server thread/INFO]: [Essentials] Starting usermap repair
+[17:40:57] [Server thread/WARN]: [Essentials] Missing userdata folder, aborting
+[17:40:57] [Server thread/INFO]: [Essentials] Attempting to migrate ignore list to UUIDs
+[17:40:57] [Server thread/INFO]: [Essentials] Attempting to migrate legacy userdata keys to Configurate
+[17:40:57] [Server thread/INFO]: [Essentials] Creating config from template: plugins\Essentials\worth.yml
+[17:40:57] [Server thread/INFO]: [Essentials] Creating config from template: plugins\Essentials\tpr.yml
+[17:40:58] [Server thread/INFO]: [Essentials] Loaded 36837 items from items.json.
+[17:40:58] [Server thread/INFO]: [Essentials] Creating config from template: plugins\Essentials\custom_items.yml
+[17:40:58] [Server thread/INFO]: [Essentials] Using locale en_GB
+[17:40:58] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[17:40:58] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[17:40:58] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[17:40:58] [Server thread/INFO]: Running delayed init tasks
+[17:40:58] [Craft Scheduler Thread - 0/INFO]: [Essentials] Fetching version information...
+[17:40:58] [Server thread/INFO]: [Slimefun] Now running MetricsModule build #25
+[17:40:58] [Server thread/INFO]: [Slimefun] with a total of 19/19 chart(s)!
+[17:40:58] [Server thread/INFO]: [Slimefun] Metrics build #25 started.
+[17:40:58] [Updater Thread/INFO]: [Slimefun] Slimefun is already up to date!
+[17:40:58] [Server thread/INFO]: [Slimefun] Collecting Snapshots of all Recipes...
+[17:40:58] [Server thread/INFO]: [Slimefun] Found 1,058 Recipes!
+[17:40:58] [Server thread/INFO]: 
+[17:40:58] [Server thread/INFO]: ######################### - Slimefun vRC - 25 (git 847bbec6) - #########################
+[17:40:58] [Server thread/INFO]: 
+[17:40:58] [Server thread/INFO]: Successfully loaded 541 Items and 256 Researches
+[17:40:58] [Server thread/INFO]: ( 541 Items from Slimefun, 0 Items from 0 Addons )
+[17:40:58] [Server thread/INFO]: 
+[17:40:58] [Server thread/INFO]: Slimefun is an Open-Source project that is kept alive by a large community.
+[17:40:58] [Server thread/INFO]: Consider helping us maintain this project by contributing on GitHub!
+[17:40:58] [Server thread/INFO]: 
+[17:40:58] [Server thread/INFO]:  - Source Code:  https://github.com/Slimefun/Slimefun4
+[17:40:58] [Server thread/INFO]:  - Wiki:         https://github.com/Slimefun/Slimefun4/wiki
+[17:40:58] [Server thread/INFO]:  - Addons:       https://github.com/Slimefun/Slimefun4/wiki/Addons
+[17:40:58] [Server thread/INFO]:  - Bug Reports:  https://github.com/Slimefun/Slimefun4/issues
+[17:40:58] [Server thread/INFO]:  - Discord:      https://discord.gg/slimefun
+[17:40:58] [Server thread/INFO]: 
+[17:40:59] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world"
+[17:40:59] [Server thread/INFO]: [Slimefun] This may take a long time...
+[17:40:59] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 0ms)
+[17:40:59] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world"
+[17:40:59] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_nether"
+[17:40:59] [Server thread/INFO]: [Slimefun] This may take a long time...
+[17:40:59] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 1ms)
+[17:40:59] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world_nether"
+[17:40:59] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_the_end"
+[17:40:59] [Server thread/INFO]: [Slimefun] This may take a long time...
+[17:40:59] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 0ms)
+[17:40:59] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world_the_end"
+[17:40:59] [Server thread/INFO]: [CS-CoreLib2] Loading Protection Modules...
+[17:40:59] [Server thread/INFO]: [CS-CoreLib2] This may happen more than once.
+[17:40:59] [Server thread/INFO]: Done (28.487s)! For help, type "help"
+[17:40:59] [Server thread/INFO]: Timings Reset
+[17:42:35] [User Authenticator #1/INFO]: UUID of player apocolyp4 is a4cad2db-f34d-4871-8e43-76d83a67e6e4
+[17:42:36] [Server thread/INFO]: apocolyp4 joined the game
+[17:42:37] [Server thread/INFO]: apocolyp4[/127.0.0.1:55145] logged in with entity id 332 at ([world]215.43221984341284, 63.0, -210.43773353811406)
+[17:42:47] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-88 (MC: 1.17.1) ---
+[17:42:47] [Paper Watchdog Thread/ERROR]: The server has not responded for 10 seconds! Creating thread dump
+[17:42:47] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:47] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[17:42:47] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:47] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[17:42:47] [Paper Watchdog Thread/ERROR]: 	PID: 29 | Suspended: false | Native: true | State: RUNNABLE
+[17:42:47] [Paper Watchdog Thread/ERROR]: 	Stack:
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.open0(Native Method)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.open(FileOutputStream.java:291)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.<init>(FileOutputStream.java:234)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		com.earth2me.essentials.textreader.TextInput.<init>(TextInput.java:98)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		com.earth2me.essentials.EssentialsPlayerListener$1DelayJoinTask$DelayMotdTask.run(EssentialsPlayerListener.java:426)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		com.earth2me.essentials.EssentialsPlayerListener$1DelayJoinTask.run(EssentialsPlayerListener.java:368)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_17_R1.scheduler.CraftTask.run(CraftTask.java:100)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_17_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1490)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:479)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1406)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1188)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer$$Lambda$3691/0x00000008013de260.run(Unknown Source)
+[17:42:48] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+[17:42:48] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:48] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[17:42:48] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:52] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-88 (MC: 1.17.1) ---
+[17:42:52] [Paper Watchdog Thread/ERROR]: The server has not responded for 15 seconds! Creating thread dump
+[17:42:52] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:52] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[17:42:52] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:52] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[17:42:52] [Paper Watchdog Thread/ERROR]: 	PID: 29 | Suspended: false | Native: true | State: RUNNABLE
+[17:42:52] [Paper Watchdog Thread/ERROR]: 	Stack:
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.open0(Native Method)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.open(FileOutputStream.java:291)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.<init>(FileOutputStream.java:234)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		com.earth2me.essentials.textreader.TextInput.<init>(TextInput.java:98)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		com.earth2me.essentials.EssentialsPlayerListener$1DelayJoinTask$DelayMotdTask.run(EssentialsPlayerListener.java:426)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		com.earth2me.essentials.EssentialsPlayerListener$1DelayJoinTask.run(EssentialsPlayerListener.java:368)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_17_R1.scheduler.CraftTask.run(CraftTask.java:100)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_17_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1490)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:479)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1406)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1188)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer$$Lambda$3691/0x00000008013de260.run(Unknown Source)
+[17:42:52] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+[17:42:52] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:52] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[17:42:52] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:57] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-88 (MC: 1.17.1) ---
+[17:42:57] [Paper Watchdog Thread/ERROR]: The server has not responded for 20 seconds! Creating thread dump
+[17:42:57] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:57] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[17:42:57] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:57] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[17:42:57] [Paper Watchdog Thread/ERROR]: 	PID: 29 | Suspended: false | Native: true | State: RUNNABLE
+[17:42:57] [Paper Watchdog Thread/ERROR]: 	Stack:
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.open0(Native Method)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.open(FileOutputStream.java:291)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.<init>(FileOutputStream.java:234)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		com.earth2me.essentials.textreader.TextInput.<init>(TextInput.java:98)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		com.earth2me.essentials.EssentialsPlayerListener$1DelayJoinTask$DelayMotdTask.run(EssentialsPlayerListener.java:426)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		com.earth2me.essentials.EssentialsPlayerListener$1DelayJoinTask.run(EssentialsPlayerListener.java:368)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_17_R1.scheduler.CraftTask.run(CraftTask.java:100)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		app//org.bukkit.craftbukkit.v1_17_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:468)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1490)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:479)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1406)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1188)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		app//net.minecraft.server.MinecraftServer$$Lambda$3691/0x00000008013de260.run(Unknown Source)
+[17:42:57] [Paper Watchdog Thread/ERROR]: 		java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+[17:42:57] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:57] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[17:42:57] [Paper Watchdog Thread/ERROR]: ------------------------------
+[17:42:59] [Server thread/WARN]: [Essentials] plugins\Essentials\motd.txt (Access is denied)
+[17:42:59] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 23806ms or 476 ticks behind
+[17:43:16] [Server thread/INFO]: apocolyp4 issued server command: /day
+[17:43:22] [Server thread/INFO]: apocolyp4 issued server command: /god
+[17:43:49] [Server thread/WARN]: UUID of added entity already exists: EntityCow['Cow'/455, uuid='e0aa31b5-59a8-4bcf-af94-e3a803ec0d7e', l='ServerLevel[world]', x=384.07, y=66.00, z=-101.08, cpos=[24, -7], tl=18, v=false, rR=null]

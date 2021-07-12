@@ -11,16 +11,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import me.mrCookieSlime.CSCoreLibPlugin.CSCoreLib;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ClickAction;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.InvUtils;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.Item.CustomItem;
-import me.mrCookieSlime.CSCoreLibPlugin.general.World.CustomSkull;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
-
+import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
@@ -46,10 +42,12 @@ public class Extruder extends AContainer {
 				new ItemStack[] {WonderItems.WHEEL, WonderItems.SPINDEL, WonderItems.WHEEL, SlimefunItems.ELECTRIC_MOTOR, new ItemStack(Material.IRON_TRAPDOOR), SlimefunItems.ELECTRIC_MOTOR, SlimefunItems.HARDENED_GLASS, null, SlimefunItems.HARDENED_GLASS}
 		);
 		try {
+			/*
 			CARBON_FIBRE = new CustomItem(CustomSkull.getItem("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQzMTY2OGQxMTYzOTdmYTdiY2JlODk0NGQ1MWQyMjkwOWUzYjgwYzlkM2RkZTE5ZmY0ODZmZGRmZTA2ZCJ9fX0="), "&6Carbon Fibre");
 			LEAD_FIBRE = new CustomItem(CustomSkull.getItem("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjc0MTc5MjQ1NjY3ZTYxNjY5Y2MxNDFhM2RjNDZkMjU5ZjE1OWEyOGVhMWI0NjkzNjQyZDlhMzEyNmRhOTU3ZCJ9fX0="), "&6Lead Fibre");
 			WONDER_FIBRE = new CustomItem(CustomSkull.getItem("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdiNzQ3YjM3OGE0MWEwYTZlZGM4NmMwMDBmMDQwYzY5OTRhODMzMjUxMTk2YzlkNTJjMmEyMzBmOTUxNjBjYyJ9fX0="), "&6Wonder Fibre");
 			WONDER_ALLOY = new CustomItem(CustomSkull.getItem("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGVhZjE5YWIyN2E3Yjk4ZGQ0NmI1YmE5YjkwMWI3MWIwZTVlZGEyMzI0MzlmYzhiMjk2ZWJkYjQ1MGJkM2U0NiJ9fX0="), "&bWonder Alloy");
+		*/
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

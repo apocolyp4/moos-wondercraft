@@ -10,10 +10,6 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 import io.github.thebusybiscuit.slimefun4.utils.itemstack.ColoredFireworkStar;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.Item.CustomArmor;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.Item.CustomItem;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.Item.CustomPotion;
-import me.mrCookieSlime.CSCoreLibPlugin.general.World.CustomSkull;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
@@ -21,12 +17,17 @@ import tech.obliviondevelop.SF.CustomFood;
 import tech.obliviondevelop.SF.IcingSugar;
 import tech.obliviondevelop.SF.Paracetamol;
 import tech.obliviondevelop.SF.Pastry;
+import tech.obliviondevelop.SF.CustomItem;
+import tech.obliviondevelop.SF.CustomArmor;
+import tech.obliviondevelop.SF.CustomPotion;
+import tech.obliviondevelop.SF.CustomSkull;
+import tech.obliviondevelop.SF.SkullItem;
 
 public class WonderItems {
 	
 	/* DIGITAL MINER (09/09/19) */
-	public static ItemStack DIGITAL_MINER = new CustomItem(Material.IRON_PICKAXE, "&bDigital Miner");
-	public static ItemStack ADVANCED_DIGITAL_MINER = new CustomItem(Material.DIAMOND_PICKAXE, "&6Advanced Digital Miner");
+	public static ItemStack DIGITAL_MINER = new tech.obliviondevelop.SF.CustomItem(Material.IRON_PICKAXE, "&bDigital Miner");
+	public static ItemStack ADVANCED_DIGITAL_MINER = new tech.obliviondevelop.SF.CustomItem(Material.DIAMOND_PICKAXE, "&6Advanced Digital Miner");
 	
 	/* BUILDING (04/22/19) */
 	public static ItemStack MIXER = new CustomItem(new ItemStack(Material.LIGHT_BLUE_CONCRETE), "&3Concrete Mixer", "&7Turns your concrete ","&7powder into wet concrete!");

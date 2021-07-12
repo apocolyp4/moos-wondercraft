@@ -16,9 +16,7 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.core.categories.LockedCategory;
-
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.Item.CustomPotion;
-import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
+import me.mrCookieSlime.Slimefun.cscorelib2.config.Config;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 //import me.mrCookieSlime.Slimefun.Lists.SlimefunItems;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
@@ -364,7 +362,7 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 				2);
 		WonderItems.custard.register(this);
 		
-		
+		/*
 		Juice apple_schnapps = new Juice(wonderFood, new SlimefunItemStack("BERRY_SCHNAPPS", new CustomPotion("&cBerry Schnapps", Color.PURPLE, new PotionEffect(PotionEffectType.CONFUSION, 1200, 11), "&rBerry Schnapps", "&cGets you drunk", "", "")), still.asRecipeType(),
 		        new ItemStack[] {null, null, null, new ItemStack(Material.SWEET_BERRIES), WonderItems.ALCOHOL, null, null, null, null});
 		apple_schnapps.register(this);
@@ -380,7 +378,7 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 		Juice zombie_cocktail = new Juice(wonderFood, new SlimefunItemStack("ZOMBIE_COCKTAIL", new CustomPotion("&cZombie Cocktail", Color.GREEN, new PotionEffect(PotionEffectType.CONFUSION, 1200, 11), "&rZombie Cocktail", "&cGets you drunk", "", "")), still.asRecipeType(),
 		        new ItemStack[] {null, null, null, new ItemStack(Material.ROTTEN_FLESH), WonderItems.ALCOHOL, new ItemStack(Material.SUGAR), null, null, null});
 		zombie_cocktail.register(this);		
-	
+		*/
 		
 		item_recipe = new ItemStack[] {null, null, null, SlimefunItems.ALUMINUM_INGOT, SlimefunItems.ALUMINUM_INGOT, SlimefunItems.ALUMINUM_INGOT, null, null, null};
 		slimefun_stack = new SlimefunItemStack("PIE_TIN", WonderItems.PIE_TIN);
@@ -1350,9 +1348,9 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 		research.addItems(WonderItems.COW_SPAWN_EGG, WonderItems.PIG_SPAWN_EGG, WonderItems.SHEEP_SPAWN_EGG, WonderItems.WOLF_SPAWN_EGG, WonderItems.SQUID_SPAWN_EGG, WonderItems.BEE_SPAWN_EGG, WonderItems.VILLAGER_SPAWN_EGG, WonderItems.MOOSHROOM_SPAWN_EGG, WonderItems.PANDA_SPAWN_EGG, WonderItems.HORSE_SPAWN_EGG, WonderItems.DOLPHIN_SPAWN_EGG, WonderItems.TURTLE_SPAWN_EGG, WonderItems.PARROT_SPAWN_EGG, WonderItems.RABBIT_SPAWN_EGG, WonderItems.POLAR_BEAR_SPAWN_EGG, WonderItems.GUARDIAN_SPAWN_EGG, WonderItems.LLAMA_SPAWN_EGG, WonderItems.SLIME_SPAWN_EGG);
 		research.register();
 		
-		research = new Research(new NamespacedKey(this, "SCHNAPPS"), 823, "Schnapps", 20);	
-		research.addItems(apple_schnapps.getItem(), berry_schnapps.getItem(), miduri.getItem());
-		research.register();
+		//research = new Research(new NamespacedKey(this, "SCHNAPPS"), 823, "Schnapps", 20);	
+		//research.addItems(apple_schnapps.getItem(), berry_schnapps.getItem(), miduri.getItem());
+		//research.register();
 		
 		research = new Research(new NamespacedKey(this, "NETHER_MAKER"), 824, "Nether Maker", 30);	
 		research.addItems(WonderItems.NETHER_MAKER);

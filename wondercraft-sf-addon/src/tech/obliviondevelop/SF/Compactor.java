@@ -39,7 +39,7 @@ import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunPlugin;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
-import me.mrCookieSlime.CSCoreLibPlugin.CSCoreLib;
+
 
 
 
@@ -56,7 +56,7 @@ import tech.obliviondevelop.SF.Lists.WonderMachines;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
-import me.mrCookieSlime.CSCoreLibPlugin.CSCoreLib;
+
 
 public class Compactor extends MultiBlockMachine
 {

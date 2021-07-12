@@ -40,7 +40,6 @@ import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunPlugin;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
-import me.mrCookieSlime.CSCoreLibPlugin.CSCoreLib;
 
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
@@ -50,6 +49,7 @@ import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import tech.obliviondevelop.SF.Lists.WonderItems;
 import tech.obliviondevelop.SF.Lists.WonderMachines;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
+import me.mrCookieSlime.Slimefun.cscorelib2.protection.ProtectableAction;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 
@@ -92,10 +92,11 @@ public class Purifier extends MultiBlockMachine
 	@Override
 	public void onInteract(Player p, Block b) 
 	{
-		
-
-		if (CSCoreLib.getLib().getProtectionManager().canAccessChest(p.getUniqueId(), b, true)) 
-		{
+		//if (SlimefunPlugin.getProtectionManager().canAccessChest(p.getUniqueId(), b, true)) 
+		//if (SlimefunPlugin.getProtectionManager().hasPermission(p.getUniqueId(), b, true)) 
+			
+		if (SlimefunPlugin.getProtectionManager().hasPermission(p, b.getLocation(), ProtectableAction.INTERACT_BLOCK))
+		{		
 
 				Dispenser disp = (Dispenser) b.getRelative(BlockFace.DOWN).getState();
 				Inventory inv = disp.getInventory();
