@@ -10,10 +10,10 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryType.SlotType;
+import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.inventory.EquipmentSlot;
 
-import me.mrCookieSlime.CSCoreLibPlugin.events.*;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.InvUtils;
+
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 
 public class FoodListener implements Listener {
@@ -26,13 +26,13 @@ public class FoodListener implements Listener {
 	}
 
 	@EventHandler(priority = EventPriority.HIGH)
-	public void onUse(ItemUseEvent e) 
+	public void onUse(PlayerInteractEntityEvent e) 
 	{
 		Player p = e.getPlayer();
 		
 		if (p.getFoodLevel() >= 20) return;
 
-		EquipmentSlot hand = e.getParentEvent().getHand();
+		EquipmentSlot hand = e.getHand();
 
 		switch (hand) {
 			case HAND:

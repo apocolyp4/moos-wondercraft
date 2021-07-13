@@ -8,8 +8,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import tech.obliviondevelop.SF.ListUtils;
-
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 

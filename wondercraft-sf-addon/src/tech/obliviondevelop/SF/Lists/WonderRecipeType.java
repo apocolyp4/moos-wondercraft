@@ -3,8 +3,8 @@ package tech.obliviondevelop.SF.Lists;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.Item.CustomItem;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
+import tech.obliviondevelop.SF.CustomItem;
 
 public class WonderRecipeType {
 	public static RecipeType CORAL_CRUSHER = new RecipeType(new CustomItem(Material.DISPENSER, "&bCoral Crusher", "", "&a&oCrush Coral"), "CORAL_CRUSHER");

@@ -4,9 +4,7 @@ import org.bukkit.Material;
 import org.bukkit.inventory.meta.PotionMeta;
 import org.bukkit.potion.PotionData;
 import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 import org.bukkit.potion.PotionType;
-import me.mrCookieSlime.Slimefun.cscorelib2.reflection.ReflectionUtils;
 
 /*
 

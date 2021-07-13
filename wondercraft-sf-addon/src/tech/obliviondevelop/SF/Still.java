@@ -3,12 +3,7 @@ package tech.obliviondevelop.SF;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import java.io.IOException;
-
-import org.bukkit.Bukkit;
-import org.bukkit.Effect;
 import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -17,10 +12,7 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.potion.PotionEffect;
-
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunPlugin;
-import io.github.thebusybiscuit.slimefun4.implementation.items.armor.SlimefunArmorPiece;
 import io.github.thebusybiscuit.slimefun4.implementation.items.backpacks.SlimefunBackpack;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
@@ -29,8 +21,6 @@ import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
 
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
-import tech.obliviondevelop.SF.Lists.WonderItems;
-import tech.obliviondevelop.SF.Lists.WonderMachines;
 import me.mrCookieSlime.Slimefun.cscorelib2.inventory.ItemUtils;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 

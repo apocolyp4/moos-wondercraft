@@ -1,25 +1,6 @@
 package tech.obliviondevelop.SF;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
-
-import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
-
-import io.github.thebusybiscuit.slimefun4.api.items.HashedArmorpiece;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.implementation.items.armor.SlimefunArmorPiece;
-import io.github.thebusybiscuit.slimefun4.implementation.items.electric.gadgets.SolarHelmet;
-import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
-
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 
 
 

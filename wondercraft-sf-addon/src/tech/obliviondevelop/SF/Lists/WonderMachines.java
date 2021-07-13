@@ -3,7 +3,8 @@ package tech.obliviondevelop.SF.Lists;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.Item.CustomItem;
+import tech.obliviondevelop.SF.CustomItem;
+
 
 public class WonderMachines {
 	public static ItemStack OVEN = new CustomItem(Material.DISPENSER, "&bOven", "", "&a&oOven");

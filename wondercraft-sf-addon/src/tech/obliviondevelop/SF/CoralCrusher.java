@@ -4,8 +4,6 @@ package tech.obliviondevelop.SF;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import java.io.IOException;
-
 import org.bukkit.Effect;
 import org.bukkit.Material;
 import org.bukkit.block.Block;

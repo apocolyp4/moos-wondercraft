@@ -1,6 +1,6 @@
 teleportenabled: true
 teleportauto: false
-godmode: true
+godmode: false
 muted: false
 jailed: false
 ip-address: 127.0.0.1
@@ -16,7 +16,14 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 0
-  login: 1625762557802
+  logout: 1626193839829
+  login: 1626193724500
 money: '0'
 last-account-name: apocolyp4
+logoutlocation:
+  world: 0c98873a-e5ba-43c1-9d43-176e61269d32
+  x: 255.34836457873214
+  y: 64.0
+  z: -218.53643679463252
+  yaw: -176.01904296875
+  pitch: 8.850120544433594

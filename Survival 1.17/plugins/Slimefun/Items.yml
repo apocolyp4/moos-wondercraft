@@ -3815,36 +3815,42 @@ TOAST:
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 DONUT:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 TOAST_JAM:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 TOAST_HONEY:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 BURGER:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 BERRY_JAM:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 PASTRY:
   enabled: true
   can-be-used-in-workbenches: false
@@ -3857,60 +3863,70 @@ BERRY_PIE:
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 WAFFLES:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 CHOCOLATE_BAR:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 HOT_CHOCOLATE:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 CHOCOLATE_CAKE:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 CREAM_COOKIE:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 PUMPKIN_MUFFIN:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 HOT_DOG:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 SCRAMBLED_EGG:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 CUSTARD:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 BERRY_SCHNAPPS:
   enabled: true
   can-be-used-in-workbenches: false
@@ -3947,90 +3963,105 @@ ORANGE:
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 BREADCRUMBS:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 LEMON:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 PLUM:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 LIME:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 CHERRY:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 BLUEBERRY:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 ORANGE_JAM:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 LEMON_JAM:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 LIME_JAM:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 PLUM_JAM:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 CHERRY_JAM:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 BLUEBERRY_JAM:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 APPLE_JAM:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 PASTA:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 PARACETMOL:
   enabled: true
   can-be-used-in-workbenches: false
@@ -4043,72 +4074,84 @@ CREEPER_CAKE:
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 ROAST_CHICKEN:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 FRIED_CHICKEN:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 APPLE_PIE:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 LIME_PIE:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 CHERRY_PIE:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 LEMON_PIE:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 PLUM_PIE:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 SUSHI:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 TIRAMISU:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 HOT_LEMONADE:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 LASAGNA:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  saturation-level: 6
 MOOS_DONUT:
   enabled: true
   can-be-used-in-workbenches: false

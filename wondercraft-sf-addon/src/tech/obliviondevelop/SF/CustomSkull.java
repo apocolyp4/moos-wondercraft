@@ -13,9 +13,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.SkullMeta;
 
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunPlugin;
-//import me.mrCookieSlime.CSCoreLibPlugin.CSCoreLib;
-import tech.obliviondevelop.SF.MaterialHook;
-import tech.obliviondevelop.SF.PackageName;
 
 
 public class CustomSkull {
