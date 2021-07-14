@@ -19,13 +19,15 @@ import me.mrCookieSlime.Slimefun.Objects.Category;
 public class CustomFood extends SimpleSlimefunItem<ItemConsumptionHandler> {
 
 	private final float food;
-	private final ItemSetting<Integer> saturation = new IntRangeSetting(this, "saturation-level", 0, 6, Integer.MAX_VALUE);
+	private ItemSetting<Integer> saturation;
 
 	public CustomFood(Category category, SlimefunItemStack item,  RecipeType recipe_type, ItemStack[] recipe, int food) 
 	{
 		super(category, item, recipe_type, recipe);
-		addItemSetting(saturation);
+		
 		this.food = food;
+		saturation = new IntRangeSetting(this, "saturation-level", 0, food, Integer.MAX_VALUE);
+		addItemSetting(saturation);
 	}
 
 

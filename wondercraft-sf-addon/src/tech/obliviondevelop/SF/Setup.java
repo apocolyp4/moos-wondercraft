@@ -127,7 +127,7 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 		console = getServer().getConsoleSender();
 		console.sendMessage("---------------------------------------------");
 		console.sendMessage("Wondercraft Extra Slimefun Addon's Loading...");
-		
+
         // Setup config.yml
         config = new Config(this);
        
@@ -252,8 +252,7 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 		WonderItems.toast = new CustomFood(wonderFood,
 				toast_stack,
 				 oven.asRecipeType()
-				,new ItemStack[] {new ItemStack(Material.BREAD), SlimefunItems.BUTTER, null, null, null, null, null, null, null},
-				1);
+				,new ItemStack[] {new ItemStack(Material.BREAD), SlimefunItems.BUTTER, null, null, null, null, null, null, null}, 1);
 		WonderItems.toast.register(this);
 		
 		WonderItems.donut = new CustomFood(wonderFood,

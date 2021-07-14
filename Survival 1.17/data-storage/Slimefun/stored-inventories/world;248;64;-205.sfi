@@ -1,0 +1,28 @@
+preset: FRYER
+'24':
+  ==: org.bukkit.inventory.ItemStack
+  v: 2730
+  type: PLAYER_HEAD
+  amount: 3
+  meta:
+    ==: ItemMeta
+    meta-type: SKULL
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"Donut"}],"text":""}'
+    lore:
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"Yum
+      Yum"}],"text":""}'
+    internal: H4sIAAAAAAAA/03PQW6CQBiG4d/GJoiNm256DIRC48JFi6hDYKiC6LADHOuMM2oQGjHppgfoadp9r9HDNCnLLr883+ZVAVS4CXeVEM/FYcMEVaCNU0mhY4f2oaAey1RQGzvSomT01AGlpOeyKuhJBYCWAtdxKioKn7R2tWS11dYrV+Q1spodhZoIED8+oH1cZzaykGx8+mh59eDf1yzTpSmI4W6T/azKZKx5xlzQ6byfy8VrMPINchEsGLnMj150zBd6EgmJua/7ulOTaMyxdDTCYxZEmCfSMZMl0ZLJeIclOWOJTDyJWePCv5Aa8/we7fuDzWw4BOjCFVo3Ie2f3luve+dHH9+tp/fb3y+AP5NTbxgcAQAA
+    skull-owner: CSCoreLib
+'19':
+  ==: org.bukkit.inventory.ItemStack
+  v: 2730
+  type: PLAYER_HEAD
+  amount: 51
+  meta:
+    ==: ItemMeta
+    meta-type: SKULL
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"Dough"}],"text":""}'
+    internal: H4sIAAAAAAAA/02PS06DUBiFf01NAF2CEyeOKW0xTexAoAmXcEEKhcKMx2143EsbClpYglP34Arci3PX4UCcOTlfTr4zOQKAADdu1VH63Bz2BSUcTKyYEeBVVz00xCwSAYTRHUnTFuTEA9eSc9s15CQAwAUHV35MOwKfpDfEaJeL2c6gaY/ksXuuSG1UHh9Q7feJimTERq8/yWa//LddtHGwoOHMyKPa6RLmi+ZsQ4m+maZs+4IZkvDgvOJgPYRSOGAW9rbm51GZ0cgzKjwoI/EwsvzL0KtEi23nUanktraW7MCn2FMqy0vPEUNzrGUM1dPl3lmtAK7hEmXjkcnP1913ea9LH/zb4+17nQP8AhLF+fQcAQAA
+    PublicBukkitValues:
+      slimefun:slimefun_item: DOUGH
+    skull-owner: CSCoreLib

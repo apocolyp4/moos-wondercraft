@@ -22,6 +22,7 @@ import tech.obliviondevelop.SF.CustomArmor;
 import tech.obliviondevelop.SF.CustomPotion;
 import tech.obliviondevelop.SF.CustomSkull;
 import tech.obliviondevelop.SF.SkullItem;
+import tech.obliviondevelop.SF.Toast;
 
 public class WonderItems {
 	

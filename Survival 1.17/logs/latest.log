@@ -1,216 +1,184 @@
-[17:23:43] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[17:23:44] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[17:23:45] [Worker-Main-5/INFO]: Loaded 7 recipes
-[17:23:48] [Server thread/INFO]: Starting minecraft server version 1.17.1
-[17:23:48] [Server thread/INFO]: Loading properties
-[17:23:48] [Server thread/INFO]: This server is running Paper version git-Paper-88 (MC: 1.17.1) (Implementing API version 1.17.1-R0.1-SNAPSHOT) (Git: 648f607)
-[17:23:49] [Server thread/INFO]: Debug logging is disabled
-[17:23:49] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:23:49] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:23:49] [Server thread/INFO]: Default game type: SURVIVAL
-[17:23:49] [Server thread/INFO]: Generating keypair
-[17:23:49] [Server thread/INFO]: Starting Minecraft server on *:25569
-[17:23:49] [Server thread/INFO]: Using default channel type
-[17:23:51] [Server thread/INFO]: [Slimefun] Loading Slimefun vRC - 25 (git 847bbec6)
-[17:23:51] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.0-dev+202-a098055
-[17:23:51] [Server thread/INFO]: [WondercraftSFAddon] Loading WondercraftSFAddon v1.0
-[17:23:51] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:23:51] [Server thread/INFO]: Preparing level "world"
-[17:23:52] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[17:23:57] [Server thread/INFO]: Time elapsed: 5325 ms
-[17:23:57] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[17:24:01] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[17:24:01] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[17:24:01] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[17:24:01] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[17:24:01] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[17:24:01] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[17:24:01] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[17:24:01] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:01] [Server thread/INFO]: Time elapsed: 4050 ms
-[17:24:01] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[17:24:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:08] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[17:24:08] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[17:24:08] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[17:24:08] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:08] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[17:24:09] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[17:24:09] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[17:24:10] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[17:24:10] [Server thread/INFO]: Time elapsed: 8823 ms
-[17:24:10] [Server thread/INFO]: [Slimefun] Enabling Slimefun vRC - 25 (git 847bbec6)
-[17:24:10] [Server thread/INFO]: [Slimefun] Paper was detected! Performance optimizations have been applied.
-[17:24:10] [Server thread/INFO]: [Slimefun] Creating directories...
-[17:24:10] [Server thread/INFO]: [Slimefun] Loading language files...
-[17:24:13] [Server thread/INFO]: [Slimefun] Loaded language "en"
-[17:24:13] [Server thread/INFO]: [Slimefun] Available languages: en, de, fr, it, es, ru, uk, sv, cs, bg, pt-BR, hu, sk, vi, id, zh-CN, zh-TW, ja, ko, he, ar, tr, th, tl
-[17:24:13] [Server thread/INFO]: [Slimefun] Starting Auto-Updater...
-[17:24:13] [Server thread/INFO]: [Slimefun] Loading GEO-Resources...
-[17:24:15] [Server thread/INFO]: [Slimefun] Loading Tags...
-[17:24:15] [Server thread/INFO]: [Slimefun] Loading items...
-[17:24:17] [Server thread/INFO]: [Slimefun] Loading researches...
-[17:24:17] [Server thread/INFO]: [Slimefun] Loading Wiki pages...
-[17:24:17] [Server thread/INFO]: [Slimefun] Registering listeners...
-[17:24:17] [Server thread/INFO]: [Slimefun] Loading Third-Party plugin integrations...
-[17:24:17] [Server thread/INFO]: [Slimefun] Slimefun has finished loading in 7.17s
-[17:24:17] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.0-dev+202-a098055
-[17:24:18] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[17:24:18] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[17:24:19] [Server thread/INFO]: [Essentials] Loaded 36837 items from items.json.
-[17:24:19] [Server thread/INFO]: [Essentials] Using locale en_GB
-[17:24:19] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[17:24:19] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[17:24:19] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
-[17:24:19] [Server thread/INFO]: [WondercraftSFAddon] Enabling WondercraftSFAddon v1.0
-[17:24:19] [Server thread/INFO]: ---------------------------------------------
-[17:24:19] [Server thread/INFO]: Wondercraft Extra Slimefun Addon's Loading...
-[17:24:19] [Server thread/WARN]: java.lang.ClassNotFoundException: net.minecraft.server.v1_17_R1.EntityPlayer
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:146)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103)
-[17:24:19] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
-[17:24:19] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
-[17:24:19] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:375)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.ReflectionUtils.getClass(ReflectionUtils.java:235)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.ReflectionUtils.<clinit>(ReflectionUtils.java:37)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.CustomSkull.<clinit>(CustomSkull.java:30)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Lists.WonderItems.getSkull(WonderItems.java:345)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Lists.WonderItems.<clinit>(WonderItems.java:73)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.IndustrialGrinder.<init>(IndustrialGrinder.java:21)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Setup.onEnable(Setup.java:167)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:500)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugin(CraftServer.java:518)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugins(CraftServer.java:432)
-[17:24:19] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld(MinecraftServer.java:639)
-[17:24:19] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:306)
-[17:24:19] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1126)
-[17:24:19] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316)
-[17:24:19] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
-[17:24:19] [Server thread/WARN]: java.lang.ClassNotFoundException: net.minecraft.server.v1_17_R1.TileEntitySkull
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:146)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103)
-[17:24:19] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
-[17:24:19] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
-[17:24:19] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:375)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.ReflectionUtils.getClass(ReflectionUtils.java:235)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.CustomSkull.<clinit>(CustomSkull.java:35)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Lists.WonderItems.getSkull(WonderItems.java:345)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Lists.WonderItems.<clinit>(WonderItems.java:73)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.IndustrialGrinder.<init>(IndustrialGrinder.java:21)
-[17:24:19] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Setup.onEnable(Setup.java:167)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:500)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugin(CraftServer.java:518)
-[17:24:19] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugins(CraftServer.java:432)
-[17:24:19] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld(MinecraftServer.java:639)
-[17:24:19] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:306)
-[17:24:19] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1126)
-[17:24:19] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316)
-[17:24:19] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): The capacity has not been configured correctly. The Item was disabled.
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): Make sure to call 'ConcreteMixer#setEnergyCapacity(...)' before registering!
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): The energy consumption has not been configured correctly. The Item was disabled.
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): Make sure to call 'ConcreteMixer#setEnergyConsumption(...)' before registering!
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): The processing speed has not been configured correctly. The Item was disabled.
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): Make sure to call 'ConcreteMixer#setProcessingSpeed(...)' before registering!
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGenerator - 'WONDER_SOLAR_GENERATOR' (WondercraftSFAddon v1.0): The energy consumption has not been configured correctly. The Item was disabled.
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGenerator - 'WONDER_SOLAR_GENERATOR' (WondercraftSFAddon v1.0): Make sure to call 'WonderSolarGenerator#setEnergyProduction(...)' before registering!
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGeneratorII - 'WONDER_SOLAR_GENERATOR_II' (WondercraftSFAddon v1.0): The energy consumption has not been configured correctly. The Item was disabled.
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGeneratorII - 'WONDER_SOLAR_GENERATOR_II' (WondercraftSFAddon v1.0): Make sure to call 'WonderSolarGeneratorII#setEnergyProduction(...)' before registering!
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGeneratorIII - 'WONDER_SOLAR_GENERATOR_III' (WondercraftSFAddon v1.0): The energy consumption has not been configured correctly. The Item was disabled.
-[17:24:19] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGeneratorIII - 'WONDER_SOLAR_GENERATOR_III' (WondercraftSFAddon v1.0): Make sure to call 'WonderSolarGeneratorIII#setEnergyProduction(...)' before registering!
-[17:24:19] [Server thread/INFO]: Wondercraft Extra Slimefun Addon's Loaded...
-[17:24:19] [Server thread/INFO]: ---------------------------------------------
-[17:24:20] [Server thread/INFO]: Running delayed init tasks
-[17:24:20] [Craft Scheduler Thread - 6/INFO]: [Essentials] Fetching version information...
-[17:24:20] [Server thread/INFO]: [Slimefun] Now running MetricsModule build #25
-[17:24:20] [Server thread/INFO]: [Slimefun] with a total of 19/19 chart(s)!
-[17:24:20] [Server thread/INFO]: [Slimefun] Metrics build #25 started.
-[17:24:20] [Server thread/INFO]: [Slimefun] Collecting Snapshots of all Recipes...
-[17:24:20] [Server thread/INFO]: [Slimefun] Found 1,058 Recipes!
-[17:24:20] [Server thread/INFO]: 
-[17:24:20] [Server thread/INFO]: ######################### - Slimefun vRC - 25 (git 847bbec6) - #########################
-[17:24:20] [Server thread/INFO]: 
-[17:24:20] [Server thread/INFO]: Successfully loaded 733 Items and 320 Researches
-[17:24:20] [Server thread/INFO]: ( 541 Items from Slimefun, 192 Items from 1 Addons )
-[17:24:20] [Server thread/INFO]: 
-[17:24:20] [Server thread/INFO]: Slimefun is an Open-Source project that is kept alive by a large community.
-[17:24:20] [Server thread/INFO]: Consider helping us maintain this project by contributing on GitHub!
-[17:24:20] [Server thread/INFO]: 
-[17:24:20] [Server thread/INFO]:  - Source Code:  https://github.com/Slimefun/Slimefun4
-[17:24:20] [Server thread/INFO]:  - Wiki:         https://github.com/Slimefun/Slimefun4/wiki
-[17:24:20] [Server thread/INFO]:  - Addons:       https://github.com/Slimefun/Slimefun4/wiki/Addons
-[17:24:20] [Server thread/INFO]:  - Bug Reports:  https://github.com/Slimefun/Slimefun4/issues
-[17:24:20] [Server thread/INFO]:  - Discord:      https://discord.gg/slimefun
-[17:24:20] [Server thread/INFO]: 
-[17:24:20] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world"
-[17:24:20] [Server thread/INFO]: [Slimefun] This may take a long time...
-[17:24:20] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 3ms)
-[17:24:20] [Server thread/INFO]: [Slimefun] Loaded a total of 20 Blocks for World "world"
-[17:24:20] [Server thread/INFO]: [Slimefun] Avg: 0.15ms/Block
-[17:24:20] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_nether"
-[17:24:20] [Server thread/INFO]: [Slimefun] This may take a long time...
-[17:24:20] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 1ms)
-[17:24:20] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world_nether"
-[17:24:20] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_the_end"
-[17:24:20] [Server thread/INFO]: [Slimefun] This may take a long time...
-[17:24:20] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 0ms)
-[17:24:20] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world_the_end"
-[17:24:20] [Server thread/INFO]: [CS-CoreLib2] Loading Protection Modules...
-[17:24:20] [Server thread/INFO]: [CS-CoreLib2] This may happen more than once.
-[17:24:20] [Server thread/INFO]: Done (32.074s)! For help, type "help"
-[17:24:20] [Server thread/INFO]: Timings Reset
-[17:24:21] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/25, uuid='e3476657-3200-418f-a6c4-cb8aa385a4c7', l='ServerLevel[world]', x=166.31, y=72.00, z=-276.89, cpos=[10, -18], tl=161136, v=false, rR=null]
-[17:24:21] [Server thread/WARN]: UUID of added entity already exists: EntityEnderman['Enderman'/36, uuid='01cd90e2-40c9-415f-8585-f7686252bf46', l='ServerLevel[world]', x=178.27, y=70.00, z=-264.72, cpos=[11, -17], tl=38999, v=false, rR=null]
-[17:24:21] [Server thread/WARN]: UUID of added entity already exists: EntityChicken['Chicken'/67, uuid='58d93441-4f9c-4a69-8ad8-062bce75e90c', l='ServerLevel[world]', x=249.80, y=64.00, z=-293.11, cpos=[15, -19], tl=47186, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/106, uuid='af72ecdf-1e3a-4aaf-856c-edebc3b33758', l='ServerLevel[world]', x=100.62, y=63.00, z=-304.06, cpos=[6, -20], tl=100957, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/107, uuid='af72ecdf-1e3a-4aaf-856c-edebc3b33758', l='ServerLevel[world]', x=97.45, y=66.00, z=-291.18, cpos=[6, -19], tl=166958, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/108, uuid='af72ecdf-1e3a-4aaf-856c-edebc3b33758', l='ServerLevel[world]', x=98.98, y=66.00, z=-286.97, cpos=[6, -18], tl=160959, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/119, uuid='9e3ee68c-cb5b-4921-9eeb-797ddf3485b5', l='ServerLevel[world]', x=123.48, y=70.00, z=-324.90, cpos=[7, -21], tl=155015, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntityCow['Cow'/120, uuid='4601f65c-07a5-4ad1-a53d-7635da4a99d0', l='ServerLevel[world]', x=125.02, y=67.00, z=-344.50, cpos=[7, -22], tl=88777, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/121, uuid='2b159fc4-a9e3-402d-8e91-dc94a047efe1', l='ServerLevel[world]', x=125.28, y=69.00, z=-340.57, cpos=[7, -22], tl=112966, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/122, uuid='2b159fc4-a9e3-402d-8e91-dc94a047efe1', l='ServerLevel[world]', x=131.93, y=71.00, z=-329.03, cpos=[8, -21], tl=142967, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/123, uuid='9e3ee68c-cb5b-4921-9eeb-797ddf3485b5', l='ServerLevel[world]', x=131.31, y=69.00, z=-339.30, cpos=[8, -22], tl=143014, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntityChicken['Chicken'/124, uuid='1e42c3a4-342d-4d19-89e8-050b29de928d', l='ServerLevel[world]', x=178.45, y=71.00, z=-324.73, cpos=[11, -21], tl=46939, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/131, uuid='34a2df5d-2e7f-41d9-b7ec-d792ef2c06f8', l='ServerLevel[world]', x=242.63, y=67.00, z=-130.23, cpos=[15, -9], tl=160748, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/132, uuid='34a2df5d-2e7f-41d9-b7ec-d792ef2c06f8', l='ServerLevel[world]', x=240.55, y=68.00, z=-118.37, cpos=[15, -8], tl=166749, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/149, uuid='c07b02e7-da3d-40e7-9b1b-ce35e3f6a290', l='ServerLevel[world]', x=302.59, y=64.00, z=-143.67, cpos=[18, -9], tl=130927, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntityChicken['Chicken'/155, uuid='58276a60-e808-474e-825e-2f359aaaab88', l='ServerLevel[world]', x=305.49, y=69.00, z=-287.79, cpos=[19, -18], tl=58883, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/160, uuid='a303d7d8-b5e8-4b39-9845-d1cb420406d4', l='ServerLevel[world]', x=308.72, y=68.00, z=-176.15, cpos=[19, -12], tl=166938, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/163, uuid='a449f1ff-4c31-46fa-8acd-95faa0e0379f', l='ServerLevel[world]', x=314.78, y=67.00, z=-173.31, cpos=[19, -11], tl=160922, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/164, uuid='c07b02e7-da3d-40e7-9b1b-ce35e3f6a290', l='ServerLevel[world]', x=315.76, y=65.00, z=-157.56, cpos=[19, -10], tl=160926, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntityChicken['Chicken'/167, uuid='cb69e73a-7ae7-4c2a-9561-d8a11b67f600', l='ServerLevel[world]', x=215.82, y=68.00, z=-367.09, cpos=[13, -23], tl=107224, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/169, uuid='c496cce5-8bc4-44e0-849e-a2af3edd53cb', l='ServerLevel[world]', x=77.59, y=66.00, z=-162.25, cpos=[4, -11], tl=117659, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/171, uuid='f884bd89-a6be-4cb0-be43-b1092f25c495', l='ServerLevel[world]', x=64.11, y=72.00, z=-320.22, cpos=[4, -21], tl=94974, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/172, uuid='f884bd89-a6be-4cb0-be43-b1092f25c495', l='ServerLevel[world]', x=64.96, y=67.00, z=-314.63, cpos=[4, -20], tl=148975, v=false, rR=null]
-[17:24:22] [Server thread/WARN]: UUID of added entity already exists: EntityPig['Pig'/173, uuid='c0971e6f-9168-49e9-8a46-8b9ebc7b8c9e', l='ServerLevel[world]', x=65.55, y=71.00, z=-293.22, cpos=[4, -19], tl=124981, v=false, rR=null]
-[17:24:23] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/179, uuid='77f2f97f-12c8-4e4d-b7c4-80b26dcca55b', l='ServerLevel[world]', x=323.50, y=64.00, z=-211.06, cpos=[20, -14], tl=76771, v=false, rR=null]
-[17:24:23] [Server thread/WARN]: UUID of added entity already exists: EntityChicken['Chicken'/188, uuid='f7da4c40-082b-4ef8-87a2-feeca6fb2195', l='ServerLevel[world]', x=322.75, y=64.00, z=-254.32, cpos=[20, -16], tl=160529, v=false, rR=null]
-[17:24:23] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/193, uuid='f884bd89-a6be-4cb0-be43-b1092f25c495', l='ServerLevel[world]', x=63.04, y=72.00, z=-301.88, cpos=[3, -19], tl=136976, v=false, rR=null]
-[17:24:24] [Updater Thread/INFO]: [Slimefun] Slimefun is already up to date!
-[17:24:26] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/241, uuid='e15aa428-793e-4ac6-8e2a-bb73e0d9ce4d', l='ServerLevel[world]', x=288.95, y=66.00, z=-394.40, cpos=[18, -25], tl=37683, v=false, rR=null]
-[17:24:26] [Server thread/WARN]: UUID of added entity already exists: EntityCow['Cow'/286, uuid='03eec566-b081-45b3-8777-7bc42b5dccfd', l='ServerLevel[world]', x=293.22, y=65.00, z=-58.55, cpos=[18, -4], tl=15692, v=false, rR=null]
-[17:24:26] [Server thread/WARN]: UUID of added entity already exists: EntityPig['Pig'/296, uuid='e8700f6f-4527-4501-ad18-3b0544c3051e', l='ServerLevel[world]', x=382.31, y=64.00, z=-186.48, cpos=[23, -12], tl=28720, v=false, rR=null]
-[17:24:28] [Craft Scheduler Thread - 6/WARN]: [Essentials] You're 19 EssentialsX dev build(s) out of date!
-[17:24:28] [Craft Scheduler Thread - 6/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html
-[17:28:43] [User Authenticator #1/INFO]: UUID of player apocolyp4 is a4cad2db-f34d-4871-8e43-76d83a67e6e4
-[17:28:44] [Server thread/INFO]: apocolyp4 joined the game
-[17:28:44] [Server thread/INFO]: apocolyp4[/127.0.0.1:51430] logged in with entity id 334 at ([world]253.48835382864428, 64.0, -209.22978308083904)
-[17:28:45] [Server thread/WARN]: UUID of added entity already exists: EntityCow['Cow'/361, uuid='11c52ed8-f6b5-4e05-9925-1340c26e7175', l='ServerLevel[world]', x=386.15, y=64.00, z=-190.22, cpos=[24, -12], tl=30063, v=false, rR=null]
-[17:28:50] [Server thread/INFO]: apocolyp4 issued server command: /day
-[17:28:55] [Server thread/WARN]: UUID of added entity already exists: EntityChicken['Chicken'/421, uuid='0f765a12-45e8-42b4-a6d2-e3058ed66462', l='ServerLevel[world]', x=168.64, y=64.00, z=-47.88, cpos=[10, -3], tl=2974, v=false, rR=null]
-[17:29:39] [Server thread/INFO]: apocolyp4 issued server command: /sf give apocolyp4 TOAST_JAM
-[17:30:39] [Server thread/INFO]: apocolyp4 lost connection: Disconnected
-[17:30:39] [Server thread/INFO]: apocolyp4 left the game
+[18:21:37] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[18:21:38] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[18:21:40] [Worker-Main-6/INFO]: Loaded 7 recipes
+[18:21:44] [Server thread/INFO]: Starting minecraft server version 1.17.1
+[18:21:44] [Server thread/INFO]: Loading properties
+[18:21:44] [Server thread/INFO]: This server is running Paper version git-Paper-88 (MC: 1.17.1) (Implementing API version 1.17.1-R0.1-SNAPSHOT) (Git: 648f607)
+[18:21:44] [Server thread/INFO]: Debug logging is disabled
+[18:21:44] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:21:44] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:21:44] [Server thread/INFO]: Default game type: SURVIVAL
+[18:21:44] [Server thread/INFO]: Generating keypair
+[18:21:45] [Server thread/INFO]: Starting Minecraft server on *:25569
+[18:21:45] [Server thread/INFO]: Using default channel type
+[18:21:48] [Server thread/INFO]: [Slimefun] Loading Slimefun vRC - 25 (git 847bbec6)
+[18:21:48] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.0-dev+202-a098055
+[18:21:48] [Server thread/INFO]: [WondercraftSFAddon] Loading WondercraftSFAddon v1.0
+[18:21:48] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:21:48] [Server thread/INFO]: Preparing level "world"
+[18:21:50] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[18:21:57] [Server thread/INFO]: Time elapsed: 7240 ms
+[18:21:57] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[18:22:02] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:02] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[18:22:02] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:02] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:02] [Server thread/INFO]: Time elapsed: 5582 ms
+[18:22:02] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[18:22:08] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[18:22:08] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[18:22:09] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[18:22:09] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[18:22:10] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[18:22:10] [Server thread/INFO]: Time elapsed: 7638 ms
+[18:22:10] [Server thread/INFO]: [Slimefun] Enabling Slimefun vRC - 25 (git 847bbec6)
+[18:22:10] [Server thread/INFO]: [Slimefun] Paper was detected! Performance optimizations have been applied.
+[18:22:10] [Server thread/INFO]: [Slimefun] Creating directories...
+[18:22:10] [Server thread/INFO]: [Slimefun] Loading language files...
+[18:22:12] [Server thread/INFO]: [Slimefun] Loaded language "en"
+[18:22:12] [Server thread/INFO]: [Slimefun] Available languages: en, de, fr, it, es, ru, uk, sv, cs, bg, pt-BR, hu, sk, vi, id, zh-CN, zh-TW, ja, ko, he, ar, tr, th, tl
+[18:22:12] [Server thread/INFO]: [Slimefun] Starting Auto-Updater...
+[18:22:12] [Server thread/INFO]: [Slimefun] Loading GEO-Resources...
+[18:22:15] [Server thread/INFO]: [Slimefun] Loading Tags...
+[18:22:15] [Server thread/INFO]: [Slimefun] Loading items...
+[18:22:18] [Server thread/INFO]: [Slimefun] Loading researches...
+[18:22:18] [Server thread/INFO]: [Slimefun] Loading Wiki pages...
+[18:22:18] [Server thread/INFO]: [Slimefun] Registering listeners...
+[18:22:18] [Server thread/INFO]: [Slimefun] Loading Third-Party plugin integrations...
+[18:22:18] [Server thread/INFO]: [Slimefun] Slimefun has finished loading in 8.11s
+[18:22:18] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.0-dev+202-a098055
+[18:22:19] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[18:22:19] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[18:22:20] [Server thread/INFO]: [Essentials] Loaded 36837 items from items.json.
+[18:22:20] [Server thread/INFO]: [Essentials] Using locale en_GB
+[18:22:21] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[18:22:21] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[18:22:21] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[18:22:21] [Server thread/INFO]: [WondercraftSFAddon] Enabling WondercraftSFAddon v1.0
+[18:22:21] [Server thread/INFO]: ---------------------------------------------
+[18:22:21] [Server thread/INFO]: Wondercraft Extra Slimefun Addon's Loading...
+[18:22:22] [Server thread/WARN]: java.lang.ClassNotFoundException: net.minecraft.server.v1_17_R1.EntityPlayer
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:146)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103)
+[18:22:22] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+[18:22:22] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[18:22:22] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:375)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.ReflectionUtils.getClass(ReflectionUtils.java:235)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.ReflectionUtils.<clinit>(ReflectionUtils.java:37)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.CustomSkull.<clinit>(CustomSkull.java:30)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Lists.WonderItems.getSkull(WonderItems.java:346)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Lists.WonderItems.<clinit>(WonderItems.java:74)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.IndustrialGrinder.<init>(IndustrialGrinder.java:21)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Setup.onEnable(Setup.java:167)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:500)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugin(CraftServer.java:518)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugins(CraftServer.java:432)
+[18:22:22] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld(MinecraftServer.java:639)
+[18:22:22] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:306)
+[18:22:22] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1126)
+[18:22:22] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316)
+[18:22:22] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
+[18:22:22] [Server thread/WARN]: java.lang.ClassNotFoundException: net.minecraft.server.v1_17_R1.TileEntitySkull
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:146)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:103)
+[18:22:22] [Server thread/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+[18:22:22] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[18:22:22] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:375)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.ReflectionUtils.getClass(ReflectionUtils.java:235)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.CustomSkull.<clinit>(CustomSkull.java:35)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Lists.WonderItems.getSkull(WonderItems.java:346)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Lists.WonderItems.<clinit>(WonderItems.java:74)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.IndustrialGrinder.<init>(IndustrialGrinder.java:21)
+[18:22:22] [Server thread/WARN]: 	at tech.obliviondevelop.SF.Setup.onEnable(Setup.java:167)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:500)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugin(CraftServer.java:518)
+[18:22:22] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugins(CraftServer.java:432)
+[18:22:22] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld(MinecraftServer.java:639)
+[18:22:22] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:306)
+[18:22:22] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1126)
+[18:22:22] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316)
+[18:22:22] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): The capacity has not been configured correctly. The Item was disabled.
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): Make sure to call 'ConcreteMixer#setEnergyCapacity(...)' before registering!
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): The energy consumption has not been configured correctly. The Item was disabled.
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): Make sure to call 'ConcreteMixer#setEnergyConsumption(...)' before registering!
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): The processing speed has not been configured correctly. The Item was disabled.
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] ConcreteMixer - 'CONCRETE_MIXER' (WondercraftSFAddon v1.0): Make sure to call 'ConcreteMixer#setProcessingSpeed(...)' before registering!
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGenerator - 'WONDER_SOLAR_GENERATOR' (WondercraftSFAddon v1.0): The energy consumption has not been configured correctly. The Item was disabled.
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGenerator - 'WONDER_SOLAR_GENERATOR' (WondercraftSFAddon v1.0): Make sure to call 'WonderSolarGenerator#setEnergyProduction(...)' before registering!
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGeneratorII - 'WONDER_SOLAR_GENERATOR_II' (WondercraftSFAddon v1.0): The energy consumption has not been configured correctly. The Item was disabled.
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGeneratorII - 'WONDER_SOLAR_GENERATOR_II' (WondercraftSFAddon v1.0): Make sure to call 'WonderSolarGeneratorII#setEnergyProduction(...)' before registering!
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGeneratorIII - 'WONDER_SOLAR_GENERATOR_III' (WondercraftSFAddon v1.0): The energy consumption has not been configured correctly. The Item was disabled.
+[18:22:22] [Server thread/WARN]: [WondercraftSFAddon] WonderSolarGeneratorIII - 'WONDER_SOLAR_GENERATOR_III' (WondercraftSFAddon v1.0): Make sure to call 'WonderSolarGeneratorIII#setEnergyProduction(...)' before registering!
+[18:22:22] [Server thread/INFO]: Wondercraft Extra Slimefun Addon's Loaded...
+[18:22:22] [Server thread/INFO]: ---------------------------------------------
+[18:22:23] [Server thread/INFO]: Running delayed init tasks
+[18:22:23] [Server thread/INFO]: [Slimefun] Now running MetricsModule build #25
+[18:22:23] [Server thread/INFO]: [Slimefun] with a total of 19/19 chart(s)!
+[18:22:23] [Server thread/INFO]: [Slimefun] Metrics build #25 started.
+[18:22:23] [Craft Scheduler Thread - 6/INFO]: [Essentials] Fetching version information...
+[18:22:23] [Updater Thread/INFO]: [Slimefun] Slimefun is already up to date!
+[18:22:23] [Server thread/INFO]: [Slimefun] Collecting Snapshots of all Recipes...
+[18:22:23] [Server thread/INFO]: [Slimefun] Found 1,058 Recipes!
+[18:22:23] [Craft Scheduler Thread - 6/WARN]: [Essentials] You're 19 EssentialsX dev build(s) out of date!
+[18:22:23] [Craft Scheduler Thread - 6/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html
+[18:22:24] [Server thread/INFO]: 
+[18:22:24] [Server thread/INFO]: ######################### - Slimefun vRC - 25 (git 847bbec6) - #########################
+[18:22:24] [Server thread/INFO]: 
+[18:22:24] [Server thread/INFO]: Successfully loaded 733 Items and 320 Researches
+[18:22:24] [Server thread/INFO]: ( 541 Items from Slimefun, 192 Items from 1 Addons )
+[18:22:24] [Server thread/INFO]: 
+[18:22:24] [Server thread/INFO]: Slimefun is an Open-Source project that is kept alive by a large community.
+[18:22:24] [Server thread/INFO]: Consider helping us maintain this project by contributing on GitHub!
+[18:22:24] [Server thread/INFO]: 
+[18:22:24] [Server thread/INFO]:  - Source Code:  https://github.com/Slimefun/Slimefun4
+[18:22:24] [Server thread/INFO]:  - Wiki:         https://github.com/Slimefun/Slimefun4/wiki
+[18:22:24] [Server thread/INFO]:  - Addons:       https://github.com/Slimefun/Slimefun4/wiki/Addons
+[18:22:24] [Server thread/INFO]:  - Bug Reports:  https://github.com/Slimefun/Slimefun4/issues
+[18:22:24] [Server thread/INFO]:  - Discord:      https://discord.gg/slimefun
+[18:22:24] [Server thread/INFO]: 
+[18:22:25] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world"
+[18:22:25] [Server thread/INFO]: [Slimefun] This may take a long time...
+[18:22:25] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 18ms)
+[18:22:25] [Server thread/INFO]: [Slimefun] Loaded a total of 32 Blocks for World "world"
+[18:22:25] [Server thread/INFO]: [Slimefun] Avg: 0.56ms/Block
+[18:22:25] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_nether"
+[18:22:25] [Server thread/INFO]: [Slimefun] This may take a long time...
+[18:22:25] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 1ms)
+[18:22:25] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world_nether"
+[18:22:25] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_the_end"
+[18:22:25] [Server thread/INFO]: [Slimefun] This may take a long time...
+[18:22:25] [Server thread/INFO]: [Slimefun] Loading Blocks... 100% (FINISHED - 0ms)
+[18:22:25] [Server thread/INFO]: [Slimefun] Loaded a total of 0 Blocks for World "world_the_end"
+[18:22:25] [Server thread/INFO]: [CS-CoreLib2] Loading Protection Modules...
+[18:22:25] [Server thread/INFO]: [CS-CoreLib2] This may happen more than once.
+[18:22:25] [Server thread/INFO]: Done (41.465s)! For help, type "help"
+[18:22:25] [Server thread/INFO]: Timings Reset
+[18:22:32] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/80, uuid='63d8771b-0a4b-40c8-98a7-c47a87754781', l='ServerLevel[world]', x=240.49, y=64.00, z=-255.86, cpos=[15, -16], tl=262637, v=false, rR=null]
+[18:22:32] [Server thread/WARN]: UUID of added entity already exists: EntityCreeper['Creeper'/107, uuid='24e6ab84-5659-43c8-8fc2-b80e3586c025', l='ServerLevel[world]', x=265.17, y=42.00, z=-195.83, cpos=[16, -13], tl=166, v=false, rR=null]
+[18:22:32] [Server thread/WARN]: UUID of added entity already exists: EntitySkeleton['Skeleton'/110, uuid='90585673-5e8d-44b1-9f68-ea620cb3cda1', l='ServerLevel[world]', x=262.68, y=54.00, z=-207.70, cpos=[16, -13], tl=12378, v=false, rR=null]
+[18:22:33] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/140, uuid='f884bd89-a6be-4cb0-be43-b1092f25c495', l='ServerLevel[world]', x=93.47, y=66.00, z=-291.76, cpos=[5, -19], tl=124583, v=false, rR=null]
+[18:22:35] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/188, uuid='712c2903-8472-436f-b42c-86cdfda1051b', l='ServerLevel[world]', x=71.00, y=66.00, z=-268.50, cpos=[4, -17], tl=256652, v=false, rR=null]
+[18:22:36] [User Authenticator #1/INFO]: UUID of player apocolyp4 is a4cad2db-f34d-4871-8e43-76d83a67e6e4
+[18:22:36] [Server thread/INFO]: apocolyp4 joined the game
+[18:22:37] [Server thread/INFO]: apocolyp4[/127.0.0.1:63325] logged in with entity id 207 at ([world]248.70073971696914, 64.0, -206.3542220428247)
+[18:23:16] [Server thread/INFO]: apocolyp4 issued server command: /sf give apocolyp4 DOUGH 56
+[18:23:47] [Server thread/INFO]: apocolyp4 lost connection: Disconnected
+[18:23:47] [Server thread/INFO]: apocolyp4 left the game
+[18:24:03] [Craft Scheduler Thread - 12/INFO]: [Slimefun] Auto-saving block data... (Next auto-save: 10m)
+[18:24:03] [Craft Scheduler Thread - 12/INFO]: [Slimefun] Saving block data for world "world" (60 change(s) queued)
