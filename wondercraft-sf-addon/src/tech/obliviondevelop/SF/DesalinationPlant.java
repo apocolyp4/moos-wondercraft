@@ -43,7 +43,10 @@ public class DesalinationPlant extends AContainer
 	}
 
 	@Override
-	public void registerDefaultRecipes() {}
+	public void registerDefaultRecipes() 
+	{
+		registerRecipe(8, new ItemStack[] {new ItemStack(Material.WATER_BUCKET)},  new ItemStack[] {new CustomItem(SlimefunItems.SALT, 32)});
+	}
 	
 
 	
@@ -63,51 +66,5 @@ public class DesalinationPlant extends AContainer
 		return 256;
 	}
 	
-	protected void tick(Block b) {
-		
-		BlockMenu menu = BlockStorage.getInventory(b.getLocation());
-		BlockMenu inv = BlockStorage.getInventory(b);
-		/*
-		
-		if (isProcessing(b)) {
-			int timeleft = progress.get(b);
 
-
-            if (timeleft > 0) {
-                ChestMenuUtils.updateProgressbar(inv, 22, timeleft, processing.get(b).getTicks(), getProgressBar());
-
-                if (ChargableBlock.isChargable(b)) {
-                    if (ChargableBlock.getCharge(b) < getEnergyConsumption()) return;
-                    ChargableBlock.addCharge(b, -getEnergyConsumption());
-                    progress.put(b, timeleft - 1);
-                }
-                else progress.put(b, timeleft - 1);
-            }
-            else {
-                inv.replaceExistingItem(22, new CustomItem(Material.BLACK_STAINED_GLASS_PANE, " "));
-
-                for (ItemStack output : processing.get(b).getOutput()) {
-                    inv.pushItem(output.clone(), getOutputSlots());
-                }
-
-                progress.remove(b);
-                processing.remove(b);
-			}
-
-		}
-		else {
-			for (int slot: getInputSlots()) {
-				if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.WATER_BUCKET), true)) {
-					MachineRecipe r = new MachineRecipe(128 / getSpeed(), new ItemStack[0], new ItemStack[] {new CustomItem(SlimefunItems.SALT, 32)});
-						if (!menu.fits(r.getOutput()[0], getOutputSlots())) return;
-						BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-						processing.put(b, r);
-						progress.put(b, r.getTicks());
-					
-					break;
-				}
-			}
-		}
-		*/
-	}
 }
