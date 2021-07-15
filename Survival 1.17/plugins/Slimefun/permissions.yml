@@ -3687,3 +3687,8 @@ MOOS_M_PICKAXE:
   lore:
   - '&rYou do not have the permission'
   - '&rto access this item.'
+CONCRETE_MIXER:
+  permission: none
+  lore:
+  - '&rYou do not have the permission'
+  - '&rto access this item.'

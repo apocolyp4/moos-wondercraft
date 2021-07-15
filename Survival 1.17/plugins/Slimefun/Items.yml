@@ -4892,3 +4892,9 @@ MOOS_M_PICKAXE:
   allow-disenchanting: true
   damage-on-use: true
   call-explosion-event: false
+CONCRETE_MIXER:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true

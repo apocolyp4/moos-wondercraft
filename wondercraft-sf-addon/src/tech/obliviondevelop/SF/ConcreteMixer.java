@@ -21,19 +21,8 @@ public class ConcreteMixer extends AContainer {
 		);
 	}
 
-	@Override
-	public ItemStack getProgressBar() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
-	@Override
-	public String getMachineIdentifier() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
-	/*
 	@Override
 	public String getMachineIdentifier() {
 		return "CONCRETE_MACHINE";
@@ -50,7 +39,26 @@ public class ConcreteMixer extends AContainer {
 	}
 
 	@Override
-	public void registerDefaultRecipes() {}
+	public void registerDefaultRecipes() 
+	{
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.RED_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.RED_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.BLACK_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.BLACK_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.BLUE_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.BLUE_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.BROWN_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.BROWN_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.CYAN_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.CYAN_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.GRAY_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.GRAY_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.GREEN_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.GREEN_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.LIGHT_BLUE_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.LIGHT_BLUE_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.LIGHT_GRAY_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.LIGHT_GRAY_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.LIME_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.LIME_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.MAGENTA_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.MAGENTA_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.ORANGE_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.ORANGE_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.PINK_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.PINK_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.PURPLE_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.PURPLE_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.YELLOW_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.YELLOW_CONCRETE)});
+		registerRecipe(22, new ItemStack[] {new ItemStack(Material.WHITE_CONCRETE_POWDER)},  new ItemStack[] {new ItemStack(Material.WHITE_CONCRETE)});
+	}
+	
 	
 	
 	@Override
@@ -69,297 +77,4 @@ public class ConcreteMixer extends AContainer {
 		return 256;
 	}
 	
-	@SuppressWarnings("deprecation")
-	protected void tick(Block b) {
-		
-		BlockMenu menu = BlockStorage.getInventory(b.getLocation());
-		BlockMenu inv = BlockStorage.getInventory(b);
-		
-		if (isProcessing(b)) {
-			int timeleft = progress.get(b);
-
-
-            if (timeleft > 0) {
-                ChestMenuUtils.updateProgressbar(inv, 22, timeleft, processing.get(b).getTicks(), getProgressBar());
-
-                if (ChargableBlock.isChargable(b)) {
-                    if (ChargableBlock.getCharge(b) < getEnergyConsumption()) return;
-                    ChargableBlock.addCharge(b, -getEnergyConsumption());
-                    progress.put(b, timeleft - 1);
-                }
-                else progress.put(b, timeleft - 1);
-            }
-            else {
-                inv.replaceExistingItem(22, new CustomItem(Material.BLACK_STAINED_GLASS_PANE, " "));
-
-                for (ItemStack output : processing.get(b).getOutput()) {
-                    inv.pushItem(output.clone(), getOutputSlots());
-                }
-
-                progress.remove(b);
-                processing.remove(b);
-			}
-		}
-		else {
-			for (int slot: getInputSlots()) {
-				if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.RED_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.RED_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.BLACK_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.BLACK_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.BLUE_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.BLUE_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.BROWN_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.BROWN_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.CYAN_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.CYAN_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.GRAY_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.GRAY_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.GREEN_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.GREEN_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.LIGHT_BLUE_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.LIGHT_BLUE_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.LIGHT_GRAY_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.LIGHT_GRAY_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.LIME_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.LIME_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.MAGENTA_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.MAGENTA_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.ORANGE_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.ORANGE_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.PINK_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.PINK_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.PURPLE_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.PURPLE_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.YELLOW_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.YELLOW_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.WHITE_CONCRETE_POWDER), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.WHITE_CONCRETE)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-			}
-		}
-	}
-	*/
 }
