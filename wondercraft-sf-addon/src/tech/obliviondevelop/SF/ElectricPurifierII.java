@@ -1,5 +1,9 @@
 package tech.obliviondevelop.SF;
 
+import java.util.Random;
+
+import javax.annotation.Nonnull;
+
 import org.bukkit.Material;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.inventory.ItemStack;
@@ -7,11 +11,13 @@ import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
+import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
-
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import tech.obliviondevelop.SF.Lists.WonderItems;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 
 public class ElectricPurifierII extends AContainer {
 	
@@ -31,6 +37,7 @@ public class ElectricPurifierII extends AContainer {
 	private String id = "ELECTRIC_PURIFIER_II";
 	private Setup plugin;
 	public ConsoleCommandSender console;
+	private final ItemStack pure_ore_cluster = new ItemStack(SlimefunItems.PURE_ORE_CLUSTER);
 	
 	private RecipeType ELECTRIC_PURIFIER_II = new RecipeType(new CustomItem(item_stack, name, description), id);
 	
@@ -89,77 +96,66 @@ public class ElectricPurifierII extends AContainer {
 		return new ItemStack(Material.FLINT_AND_STEEL);
 	}
 
+	public ItemStack get_random_item()
+	{
+		ItemStack adding = new ItemStack(Material.GRAVEL);
+		Random r = new Random();
+		int chance =  r.nextInt(100); // get random number to pick which dust to give
+		
+		if (chance >= 0 && chance <= 30) 
+		{
+			adding = WonderItems.TITANIUM_DUST;
+		}
+		else if (chance >= 31 && chance <= 60)
+		{
+			adding = WonderItems.CHROMIUM_DUST;
+		}
+		else if (chance >= 61 && chance <= 90)
+		{
+			adding = WonderItems.DUBNIUM;
+		}
+		else if (chance >= 91 && chance <= 100)
+		{
+			adding = new ItemStack(Material.GRAVEL);
+		}
+		
+		return adding;
+	}
+	
 	@Override
 	public void registerDefaultRecipes() {}
 	
-	/*
-	@SuppressWarnings("deprecation")
-	protected void tick(Block b)
-	{
-		
-		BlockMenu menu = BlockStorage.getInventory(b.getLocation());
-		BlockMenu inv = BlockStorage.getInventory(b);
-		
-		if (isProcessing(b)) {
-			int timeleft = progress.get(b);
+	   @Override
+	    protected MachineRecipe findNextRecipe(BlockMenu menu) {
+	        if (!hasFreeSlot(menu)) 
+	        {
+	            return null;
+	        }
 
+	        for (int slot : getInputSlots()) {
+	            ItemStack item = menu.getItemInSlot(slot);
 
-            if (timeleft > 0) {
-                ChestMenuUtils.updateProgressbar(inv, 22, timeleft, processing.get(b).getTicks(), getProgressBar());
+	            if (SlimefunUtils.isItemSimilar(item, SlimefunItems.PURE_ORE_CLUSTER, true, false)) {
+	                ItemStack output = get_random_item();
+	                MachineRecipe recipe = new MachineRecipe(5 / getSpeed(), new ItemStack[] { pure_ore_cluster }, new ItemStack[] { output });
 
-                if (ChargableBlock.isChargable(b)) {
-                    if (ChargableBlock.getCharge(b) < getEnergyConsumption()) return;
-                    ChargableBlock.addCharge(b, -getEnergyConsumption());
-                    progress.put(b, timeleft - 1);
-                }
-                else progress.put(b, timeleft - 1);
-            }
-            else {
-                inv.replaceExistingItem(22, new CustomItem(Material.BLACK_STAINED_GLASS_PANE, " "));
+	                if (output.getType() != Material.AIR && menu.fits(output, getOutputSlots())) {
+	                    menu.consumeItem(slot);
+	                    return recipe;
+	                }
+	            }
+	        }
 
-                for (ItemStack output : processing.get(b).getOutput()) {
-                    inv.pushItem(output.clone(), getOutputSlots());
-                }
+	        return null;
+	    }
 
-                progress.remove(b);
-                processing.remove(b);
-			}
+	    private boolean hasFreeSlot(@Nonnull BlockMenu menu) {
+	        for (int slot : getOutputSlots()) {
+	            if (menu.getItemInSlot(slot) == null) {
+	                return true;
+	            }
+	        }
 
-		}
-		else {
-			MachineRecipe r = null;
-			Random ran = new Random();
-			int chance =  ran.nextInt(100); // get random number to pick which dust to give
-			
-			for (int slot: getInputSlots()) 
-			{
-				{
-					if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), SlimefunItems.PURE_ORE_CLUSTER, true)) 
-					{				
-						if (chance >= 0 && chance <= 30) {
-							r = new MachineRecipe(5 / getSpeed(), new ItemStack[0], new ItemStack[] {WonderItems.TITANIUM_DUST});
-						}
-						else if (chance >= 31 && chance <= 60)
-						{
-							r = new MachineRecipe(5 / getSpeed(), new ItemStack[0], new ItemStack[] {WonderItems.CHROMIUM_DUST});
-						}
-						else if (chance >= 61 && chance <= 90)
-						{
-							r = new MachineRecipe(5 / getSpeed(), new ItemStack[0], new ItemStack[] {WonderItems.DUBNIUM});
-						}
-						else if (chance >= 91 && chance <= 100)
-						{
-							r = new MachineRecipe(5 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.GRAVEL)});
-						}
-						if (!menu.fits(r.getOutput()[0], getOutputSlots())) return;
-						BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-						processing.put(b, r);
-						progress.put(b, r.getTicks());
-						break;
-					}
-				}
-			}
-		}
-	}
-	*/
+	        return false;
+	    }
 }

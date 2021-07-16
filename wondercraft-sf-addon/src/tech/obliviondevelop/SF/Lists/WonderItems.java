@@ -160,6 +160,7 @@ public class WonderItems {
     public static ItemStack REANIMATOR = new CustomItem(new ItemStack(Material.NETHER_WART_BLOCK), "&3Re-animator", "&7Put items in eggs");
     public static ItemStack DEEP_FREEZE = new CustomItem(new ItemStack(Material.CYAN_CONCRETE_POWDER), "&bDeep Freeze", "&7It's like the Artic inside");
     public static ItemStack NETHER_MAKER = new CustomItem(new ItemStack(Material.NETHERRACK), "&3Nether Maker", "&7This makes nether things");
+    
     public static ItemStack ELECTRIC_PURIFIER = new CustomItem(new ItemStack(Material.PURPLE_STAINED_GLASS), "&bElectric Purifier", "&7Cleans Pure Ore Clusters");
     public static ItemStack ELECTRIC_PURIFIER_II = new CustomItem(new ItemStack(Material.PURPLE_STAINED_GLASS), "&bElectric Purifier II", "&7Cleans Pure Ore Clusters, Less Waste");
     

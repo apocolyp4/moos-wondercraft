@@ -11,19 +11,26 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 0
+  lastteleport: 1626367617483
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1626357300611
-  login: 1626357140484
+  logout: 1626440613171
+  login: 1626440444413
 money: '0'
 last-account-name: apocolyp4
 logoutlocation:
   world: 0c98873a-e5ba-43c1-9d43-176e61269d32
-  x: 248.42599949632
+  x: 248.87558724439825
   y: 64.0
-  z: -206.51052047184416
-  yaw: 1.210178256034851
-  pitch: 37.049842834472656
+  z: -205.7984027027019
+  yaw: 27.448902130126953
+  pitch: 18.449453353881836
+lastlocation:
+  world: 0c98873a-e5ba-43c1-9d43-176e61269d32
+  x: 245.30000001192093
+  y: 58.0
+  z: -217.01677555288717
+  yaw: -118.78759002685547
+  pitch: -17.24984359741211

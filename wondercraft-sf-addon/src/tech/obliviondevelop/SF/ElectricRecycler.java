@@ -42,7 +42,6 @@ public class ElectricRecycler extends AContainer {
 		
 		try {
 			
-			STONE_CHUNK = new SlimefunItemStack("STONE_CHUNK",SlimefunItems.STONE_CHUNK);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -69,7 +68,13 @@ public class ElectricRecycler extends AContainer {
 	}
 
 	@Override
-	public void registerDefaultRecipes() {}
+	public void registerDefaultRecipes() 
+	{
+		registerRecipe(3, new ItemStack[] {new ItemStack(Material.FLINT, 16)}, new ItemStack[] {new ItemStack(Material.CHARCOAL)});
+		registerRecipe(3, new ItemStack[] {new ItemStack(Material.CLAY_BALL, 4)}, new ItemStack[] {new ItemStack(Material.COBBLESTONE)});
+		registerRecipe(3, new ItemStack[] {new ItemStack(Material.SANDSTONE)}, new ItemStack[] {new ItemStack(Material.SAND)});
+		registerRecipe(3, new ItemStack[] {new CustomItem(SlimefunItems.STONE_CHUNK, 4)}, new ItemStack[] {new ItemStack(Material.SAND)});
+	}
 	
 	@Override
 	public int getSpeed() {
@@ -87,83 +92,7 @@ public class ElectricRecycler extends AContainer {
 		return 256;
 	}
 	
-	@SuppressWarnings("deprecation")
-	protected void tick(Block b)
-	{
-		
-		BlockMenu menu = BlockStorage.getInventory(b.getLocation());
-		BlockMenu inv = BlockStorage.getInventory(b);
-		/*
-		
-		if (isProcessing(b)) {
-			int timeleft = progress.get(b);
 
-
-            if (timeleft > 0) {
-                ChestMenuUtils.updateProgressbar(inv, 22, timeleft, processing.get(b).getTicks(), getProgressBar());
-
-                if (ChargableBlock.isChargable(b)) {
-                    if (ChargableBlock.getCharge(b) < getEnergyConsumption()) return;
-                    ChargableBlock.addCharge(b, -getEnergyConsumption());
-                    progress.put(b, timeleft - 1);
-                }
-                else progress.put(b, timeleft - 1);
-            }
-            else {
-                inv.replaceExistingItem(22, new CustomItem(Material.BLACK_STAINED_GLASS_PANE, " "));
-
-                for (ItemStack output : processing.get(b).getOutput()) {
-                    inv.pushItem(output.clone(), getOutputSlots());
-                }
-
-                progress.remove(b);
-                processing.remove(b);
-			}
-
-		}
-		else {
-			for (int slot: getInputSlots()) 
-			{
-				if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.FLINT, 16), true)) {
-					
-					MachineRecipe r = new MachineRecipe(3 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.CHARCOAL)});
-					if (!menu.fits(r.getOutput()[0], getOutputSlots())) return;
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 16));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}	
-				if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.CLAY_BALL, 4), true)) {
-					
-					MachineRecipe r = new MachineRecipe(3 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.COBBLESTONE)});
-					if (!menu.fits(r.getOutput()[0], getOutputSlots())) return;
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 4));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}	
-				if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.SANDSTONE), true)) {
-					
-					MachineRecipe r = new MachineRecipe(3 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.SAND)});
-					if (!menu.fits(r.getOutput()[0], getOutputSlots())) return;
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}	
-				if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new CustomItem(SlimefunItems.STONE_CHUNK, 4), true)) {
-					
-					MachineRecipe r = new MachineRecipe(3 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.SAND)});
-					if (!menu.fits(r.getOutput()[0], getOutputSlots())) return;
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 4));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}	
-			}
-		}
-		*/
-	}
 }
 
 

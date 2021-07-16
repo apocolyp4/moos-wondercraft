@@ -60,7 +60,10 @@ public class CarbonCollector extends AContainer {
 	}
 
 	@Override
-	public void registerDefaultRecipes() {}
+	public void registerDefaultRecipes() 
+	{
+		registerRecipe(45, new ItemStack[] {WonderItems.MOOINIUM},  new ItemStack[] {new CustomItem(SlimefunItems.CARBON, 32)});
+	}
 	
 	@Override
 	public int getSpeed() {
@@ -78,56 +81,7 @@ public class CarbonCollector extends AContainer {
 		return 2048;
 	}
 	
-	/*
-	@SuppressWarnings("deprecation")
-	protected void tick(Block b)
-	{
-		
-		BlockMenu menu = BlockStorage.getInventory(b.getLocation());
-		BlockMenu inv = BlockStorage.getInventory(b);
-		
-		if (isProcessing(b)) {
-			int timeleft = progress.get(b);
 
-
-            if (timeleft > 0) {
-                ChestMenuUtils.updateProgressbar(inv, 22, timeleft, processing.get(b).getTicks(), getProgressBar());
-
-                if (ChargableBlock.isChargable(b)) {
-                    if (ChargableBlock.getCharge(b) < getEnergyConsumption()) return;
-                    ChargableBlock.addCharge(b, -getEnergyConsumption());
-                    progress.put(b, timeleft - 1);
-                }
-                else progress.put(b, timeleft - 1);
-            }
-            else {
-                inv.replaceExistingItem(22, new CustomItem(Material.BLACK_STAINED_GLASS_PANE, " "));
-
-                for (ItemStack output : processing.get(b).getOutput()) {
-                    inv.pushItem(output.clone(), getOutputSlots());
-                }
-
-                progress.remove(b);
-                processing.remove(b);
-			}
-
-		}
-		else {
-			for (int slot: getInputSlots()) 
-			{
-				if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), MOOINIUM, true)) {
-					
-					MachineRecipe r = new MachineRecipe(45 / getSpeed(), new ItemStack[0], new ItemStack[] {new CustomItem(SlimefunItems.CARBON, 32)});
-					if (!menu.fits(r.getOutput()[0], getOutputSlots())) return;
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}	
-			}
-		}
-	}
-	*/
 }
 
 

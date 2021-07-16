@@ -1,6 +1,0 @@
-preset: CONCRETE_MIXER
-'19':
-  ==: org.bukkit.inventory.ItemStack
-  v: 2730
-  type: ORANGE_CONCRETE_POWDER
-  amount: 63

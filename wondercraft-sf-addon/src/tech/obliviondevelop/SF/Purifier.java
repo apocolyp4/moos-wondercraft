@@ -65,6 +65,40 @@ public class Purifier extends MultiBlockMachine
 		return recipes.stream().map(items -> items[0]).collect(Collectors.toList());
 	}
 	
+	public ItemStack get_random_item()
+	{
+		ItemStack adding = new ItemStack(Material.GLOWSTONE_DUST);
+		Random r = new Random();
+		int chance =  r.nextInt(100); // get random number to pick which dust to give
+		
+		if (chance >= 0 && chance <= 20)
+		{
+			adding = WonderItems.TITANIUM_DUST;
+		}
+		else if (chance >= 21 && chance <= 40)
+		{
+			adding = WonderItems.CHROMIUM_DUST;
+		}
+		else if (chance >= 40 && chance <= 47)
+		{
+			adding = WonderItems.DUBNIUM;
+		}
+		else if (chance >= 47 && chance <= 59)
+		{
+			adding = new ItemStack(Material.GRAVEL);
+		}							
+		else if (chance >= 60 && chance <= 79)
+		{
+			adding = SlimefunItems.STONE_CHUNK;
+		}		
+		else if (chance >= 80 && chance <= 99)
+		{
+			adding = new ItemStack(Material.CLAY_BALL);
+		}	
+		
+		return adding;
+	}
+	
 	@Override
 	public void onInteract(Player p, Block b) 
 	{
@@ -76,8 +110,6 @@ public class Purifier extends MultiBlockMachine
 
 				Dispenser disp = (Dispenser) b.getRelative(BlockFace.DOWN).getState();
 				Inventory inv = disp.getInventory();
-				Random r = new Random();
-				int chance =  r.nextInt(100); // get random number to pick which dust to give
 
 				for (ItemStack current: inv.getContents()) 
 				{
@@ -85,40 +117,12 @@ public class Purifier extends MultiBlockMachine
 					{
 						if (SlimefunUtils.isItemSimilar(current, SlimefunItems.PURE_ORE_CLUSTER, true)) 
 						{
-							//console.sendMessage(String.valueOf(chance));
-							ItemStack adding = new ItemStack(Material.GLOWSTONE_DUST);
-							
-
-							if (chance >= 0 && chance <= 20)
-							{
-								adding = WonderItems.TITANIUM_DUST;
-							}
-							else if (chance >= 21 && chance <= 40)
-							{
-								adding = WonderItems.CHROMIUM_DUST;
-							}
-							else if (chance >= 40 && chance <= 47)
-							{
-								adding = WonderItems.DUBNIUM;
-							}
-							else if (chance >= 47 && chance <= 59)
-							{
-								adding = new ItemStack(Material.GRAVEL);
-							}							
-							else if (chance >= 60 && chance <= 79)
-							{
-								adding = SlimefunItems.STONE_CHUNK;
-							}		
-							else if (chance >= 80 && chance <= 99)
-							{
-								adding = new ItemStack(Material.CLAY_BALL);
-							}	
 			
 							if (inv.firstEmpty() != -1) {
 								ItemStack removing = current.clone();
 								removing.setAmount(1);
 								inv.removeItem(removing);
-								inv.addItem(adding);
+								inv.addItem(get_random_item());
 								p.getWorld().playSound(b.getLocation(), Sound.ENTITY_PLAYER_SPLASH, 1, 1);
 								p.getWorld().playEffect(b.getLocation(), Effect.STEP_SOUND, Material.WATER);
 							}

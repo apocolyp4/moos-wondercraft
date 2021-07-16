@@ -10,6 +10,7 @@ import tech.obliviondevelop.SF.Lists.WonderItems;
 import tech.obliviondevelop.SF.Lists.WonderMachines;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
+import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 
 public class ElectricHydropress extends AContainer {
 
@@ -54,53 +55,9 @@ public class ElectricHydropress extends AContainer {
 	}
 
 	@Override
-	public void registerDefaultRecipes() {}
-		
-/*
-	protected void tick(Block b) {
-		BlockMenu menu = BlockStorage.getInventory(b.getLocation());
-		BlockMenu inv = BlockStorage.getInventory(b);
-		
-		if (isProcessing(b)) {
-			int timeleft = progress.get(b);
-
-
-            if (timeleft > 0) {
-                ChestMenuUtils.updateProgressbar(inv, 22, timeleft, processing.get(b).getTicks(), getProgressBar());
-
-                if (ChargableBlock.isChargable(b)) {
-                    if (ChargableBlock.getCharge(b) < getEnergyConsumption()) return;
-                    ChargableBlock.addCharge(b, -getEnergyConsumption());
-                    progress.put(b, timeleft - 1);
-                }
-                else progress.put(b, timeleft - 1);
-            }
-            else {
-                inv.replaceExistingItem(22, new CustomItem(Material.BLACK_STAINED_GLASS_PANE, " "));
-
-                for (ItemStack output : processing.get(b).getOutput()) {
-                    inv.pushItem(output.clone(), getOutputSlots());
-                }
-
-                progress.remove(b);
-                processing.remove(b);
-			}
-
-		}
-		else {
-			for (int slot: getInputSlots()) {
-				if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(SlimefunItems.CARBON_CHUNK), true)) {
-					ItemStack output = SlimefunItems.OIL_BUCKET;
-					
-					MachineRecipe r = new MachineRecipe(24 / getSpeed(), new ItemStack[0], new ItemStack[] {output});
-					if (!menu.fits(r.getOutput()[0], getOutputSlots())) return;
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-			}
-		}
+	public void registerDefaultRecipes() 
+	{
+		registerRecipe(3, new ItemStack[] {new CustomItem(SlimefunItems.CARBON_CHUNK)},  new ItemStack[] {new CustomItem(SlimefunItems.OIL_BUCKET)});
 	}
-	*/
+		
 }

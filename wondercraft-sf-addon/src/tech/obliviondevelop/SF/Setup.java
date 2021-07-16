@@ -196,7 +196,7 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 		ConcreteMixer concrete_mixer = new ConcreteMixer(ADVANCED_MACHINES);	
 		concrete_mixer.register(this);
 	
-		ElectricPurifier electric_purifier = new ElectricPurifier(ADVANCED_MACHINES);
+		ElectricPurifier electric_purifier = new ElectricPurifier(ADVANCED_MACHINES, purifier);
 		electric_purifier.register(this);
 		
 		ElectricPurifierII electric_purifierII = new ElectricPurifierII(ADVANCED_MACHINES);

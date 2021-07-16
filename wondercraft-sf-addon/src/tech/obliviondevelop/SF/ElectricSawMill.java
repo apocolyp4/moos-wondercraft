@@ -43,191 +43,44 @@ public class ElectricSawMill extends AContainer {
 	}
 
 	@Override
-	public int getEnergyConsumption() {
+	public int getEnergyConsumption() 
+	{
 		return 50;
 	}
 
 	@Override
-	public int getCapacity() {
+	public int getCapacity() 
+	{
 		// TODO Auto-generated method stub
 		return 128;
 	}
 
 	@Override
-	public void registerDefaultRecipes() {}
-	
-	/*
-	@SuppressWarnings("deprecation")
-	protected void tick(Block b) 
+	public void registerDefaultRecipes() 
 	{
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.ACACIA_LOG)}, new ItemStack[] {new ItemStack(Material.ACACIA_PLANKS, 8)});
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.STRIPPED_ACACIA_LOG)}, new ItemStack[] {new ItemStack(Material.ACACIA_PLANKS, 8)});
 		
-		BlockMenu menu = BlockStorage.getInventory(b.getLocation());
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.BIRCH_LOG)}, new ItemStack[] {new ItemStack(Material.BIRCH_PLANKS, 8)});
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.STRIPPED_BIRCH_LOG)}, new ItemStack[] {new ItemStack(Material.BIRCH_PLANKS, 8)});
 		
-		if (isProcessing(b)) {
-			int timeleft = progress.get(b);
-			if (timeleft > 0) {
-				ItemStack item = getProgressBar().clone();
-				ItemMeta im = item.getItemMeta();
-				ChestMenuUtils.updateProgressbar(menu, 22, timeleft, processing.get(b).getTicks(), getProgressBar());
-				
-				im.setDisplayName(" ");
-				List<String> lore = new ArrayList<String>();
-				im.setLore(lore);
-				item.setItemMeta(im);
-				
-				BlockStorage.getInventory(b).replaceExistingItem(22, item);
-				
-				if (ChargableBlock.getCharge(b) < getEnergyConsumption()) return;
-				ChargableBlock.addCharge(b, -getEnergyConsumption());
-				
-				progress.put(b, timeleft - 1);
-			}
-			else {
-				BlockStorage.getInventory(b).replaceExistingItem(22, new CustomItem(Material.BLACK_STAINED_GLASS_PANE, " "));
-				menu.pushItem(processing.get(b).getOutput()[0].clone(), getOutputSlots());
-				
-				progress.remove(b);
-				processing.remove(b);
-			}
-		}
-		else {
-			for (int slot: getInputSlots()) {
-				if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.ACACIA_LOG), true) || SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.STRIPPED_ACACIA_LOG), true)){
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.ACACIA_PLANKS, 8)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.BIRCH_LOG), true) || SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.STRIPPED_BIRCH_LOG), true)){
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.BIRCH_PLANKS, 8)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.OAK_LOG), true)|| SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.STRIPPED_OAK_LOG), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.OAK_PLANKS, 8)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.JUNGLE_LOG), true) || SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.STRIPPED_JUNGLE_LOG), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.JUNGLE_PLANKS, 8)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.DARK_OAK_LOG), true) || SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.STRIPPED_DARK_OAK_LOG), true))  {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.DARK_OAK_PLANKS, 8)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.SPRUCE_LOG), true) || SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.STRIPPED_SPRUCE_LOG), true)) {
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.SPRUCE_PLANKS, 8)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}
-				
-				
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.WARPED_STEM), true))
-						{
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.WARPED_PLANKS, 8)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}			
-				
-				else if (SlimefunUtils.isItemSimilar(BlockStorage.getInventory(b).getItemInSlot(slot), new ItemStack(Material.CRIMSON_STEM), true))
-				{
-					boolean empty_slot = false;
-					for (int output_slot: getOutputSlots()) {
-						if (BlockStorage.getInventory(b).getItemInSlot(output_slot) == null) {
-							empty_slot = true;
-							break;
-						}
-					}
-					if (!empty_slot) return;
-					
-					MachineRecipe r = new MachineRecipe(4 / getSpeed(), new ItemStack[0], new ItemStack[] {new ItemStack(Material.CRIMSON_PLANKS, 8)});
-					BlockStorage.getInventory(b).replaceExistingItem(slot, InvUtils.decreaseItem(BlockStorage.getInventory(b).getItemInSlot(slot), 1));
-					processing.put(b, r);
-					progress.put(b, r.getTicks());
-					break;
-				}			
-				
-			}
-		}
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.OAK_LOG)}, new ItemStack[] {new ItemStack(Material.OAK_PLANKS, 8)});
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.STRIPPED_OAK_LOG)}, new ItemStack[] {new ItemStack(Material.OAK_PLANKS, 8)});
+		
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.JUNGLE_LOG)}, new ItemStack[] {new ItemStack(Material.JUNGLE_PLANKS, 8)});
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.STRIPPED_JUNGLE_LOG)}, new ItemStack[] {new ItemStack(Material.JUNGLE_PLANKS, 8)});
+		
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.DARK_OAK_LOG)}, new ItemStack[] {new ItemStack(Material.DARK_OAK_PLANKS, 8)});
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.STRIPPED_DARK_OAK_LOG)}, new ItemStack[] {new ItemStack(Material.DARK_OAK_PLANKS, 8)});
+		
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.SPRUCE_LOG)}, new ItemStack[] {new ItemStack(Material.SPRUCE_PLANKS, 8)});
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.STRIPPED_SPRUCE_LOG)}, new ItemStack[] {new ItemStack(Material.SPRUCE_PLANKS, 8)});
+		
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.WARPED_STEM)}, new ItemStack[] {new ItemStack(Material.WARPED_PLANKS, 8)});
+		
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.CRIMSON_STEM)}, new ItemStack[] {new ItemStack(Material.CRIMSON_PLANKS, 8)});
+		
 	}
-	*/
+	
+
 }
