@@ -1,0 +1,36 @@
+preset: SMALL_HADRON_COLLIDER
+'19':
+  ==: org.bukkit.inventory.ItemStack
+  v: 2730
+  type: PLAYER_HEAD
+  amount: 31
+  meta:
+    ==: ItemMeta
+    meta-type: SKULL
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_red","text":"Uranium"}],"text":""}'
+    lore:
+    - '{"text":""}'
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"☢"},{"italic":false,"color":"gray","text":"
+      Radiation level: "},{"italic":false,"color":"dark_green","text":"HIGH"}],"text":""}'
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"⇨
+      "},{"italic":false,"color":"dark_red","text":"Hazmat Suit required!"}],"text":""}'
+    internal: H4sIAAAAAAAA/02PP0+DQBxAf5qaVHRz9SuYUCiYDh0UiT3CH4Ur5W6D9ip/7tqGgukx+G26u5no6ORX8VPI6Pjy3vIUAAUuo6rl/KnergvOhjDwU8FAsaIba1szt8gUUHq5Y3VTsP05DBt2aNqa7RUAOBnCWZzylsE7k45Kk1xdJQ5fSmT2jCOVB6jc3aJNLDMLmUj0fnZnunLyrzWadGFwojs53Ty3mYhVVw85m4WjpZi/ki4vvJLnVNgafaAV6SrpaXNJsd15ZVjQ8uUQYKT7+F74mlMREfYNGQeYdJ6wJSlp6eG8ChaU+5o9opEzWSfqFOACTtGqnxhcfxhX06/x7/H4+NO+fX4D/AFB95gGGQEAAA==
+    PublicBukkitValues:
+      slimefun:slimefun_item: URANIUM
+    skull-owner: CS-CoreLib
+'20':
+  ==: org.bukkit.inventory.ItemStack
+  v: 2730
+  type: PLAYER_HEAD
+  meta:
+    ==: ItemMeta
+    meta-type: SKULL
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Mooinium"}],"text":""}'
+    lore:
+    - '{"text":""}'
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Super
+      Rare Element"}],"text":""}'
+    internal: H4sIAAAAAAAA/02PQU6DQBRAv6YmFD2BpwAaMDVx0YDaITBooZRhB3TqQGfaSkGZbtx7Da9gPIJH8ATuPIBbWbp8eW/zVAAVzsJ1y/ldvV2VnCowwJmgMLRDe1tTr8xVUHu3o3VT0v0QlIZ2TVvTvQoARwqcxBlvKbxT6WppwrRl4vJCIqvnKNR4gKrdBdrEMreRhUTvpxPLk+N/rdlkC5OTkcvSzX2bi1jzRjNOpzO9EPOnYBGvSVR0RCCZirlMnYfON/yDLzAnRlzhA2OBc7MmBtJJRExSTXQisAiiQuLKLbGBmV8xTqqUpbf+M3auTT90x6tEuwI4hWO07EcGH9+fL2+P3u+r9VNfWl/nAH9akRikHAEAAA==
+    PublicBukkitValues:
+      slimefun:slimefun_item: MOOINIUM
+    skull-owner: CSCoreLib

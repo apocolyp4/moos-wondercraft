@@ -22,6 +22,7 @@ import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
+import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import tech.obliviondevelop.SF.Lists.WonderItems;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
@@ -101,7 +102,12 @@ public class NetherMaker extends AContainer
 	}
 
 	@Override
-	public void registerDefaultRecipes() {}
+	public void registerDefaultRecipes() 
+	{
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.CLAY_BALL, 8)}, new ItemStack[] {SOULSAND});
+		registerRecipe(4, new ItemStack[] {new CustomItem(SlimefunItems.STONE_CHUNK, 2), new CustomItem(SlimefunItems.MAGNESIUM_DUST, 2)},  new ItemStack[] {NETHER_QUARTZ_ORE});
+		registerRecipe(4, new ItemStack[] {new ItemStack(Material.DIRT), new CustomItem(SlimefunItems.MAGNESIUM_DUST, 2)},  new ItemStack[] {NETHERRACK});
+	}
 	
 	/*
 	@SuppressWarnings("deprecation")
@@ -111,40 +117,7 @@ public class NetherMaker extends AContainer
 		BlockMenu menu = BlockStorage.getInventory(b.getLocation());
 		BlockMenu inv = BlockStorage.getInventory(b);
 		
-		if (isProcessing(b)) {
-			int timeleft = progress.get(b);
 
-
-            if (timeleft > 0) {
-                ChestMenuUtils.updateProgressbar(inv, 22, timeleft, processing.get(b).getTicks(), getProgressBar());
-
-                if (ChargableBlock.isChargable(b)) {
-                    if (ChargableBlock.getCharge(b) < getEnergyConsumption()) return;
-                    ChargableBlock.addCharge(b, -getEnergyConsumption());
-                    progress.put(b, timeleft - 1);
-                }
-                else progress.put(b, timeleft - 1);
-            }
-            else {
-                inv.replaceExistingItem(22, new CustomItem(Material.BLACK_STAINED_GLASS_PANE, " "));
-
-                for (ItemStack output : processing.get(b).getOutput()) {
-                    inv.pushItem(output.clone(), getOutputSlots());
-                }
-
-                progress.remove(b);
-                processing.remove(b);
-			}
-
-		}
-		else {
-			boolean slot_1_filled = false;
-			int slot_1 = -1;
-			boolean slot_2_filled = false;
-			int slot_2 = -1;
-			String produce_type = "";
-			String slot_1_type = "";
-			MachineRecipe r = null;
 			
 			for (int slot: getInputSlots()) 
 			{

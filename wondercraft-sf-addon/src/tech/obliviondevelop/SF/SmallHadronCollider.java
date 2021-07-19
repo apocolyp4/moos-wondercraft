@@ -63,7 +63,10 @@ public class SmallHadronCollider extends AContainer {
 	}
 
 	@Override
-	public void registerDefaultRecipes() {}
+	public void registerDefaultRecipes() 
+	{
+		registerRecipe(5, new ItemStack[] {URANIUM, DUBNIUM},  new ItemStack[] {MOOINIUM});
+	}
 	
 	@Override
 	public int getSpeed() {
@@ -130,7 +133,7 @@ public class SmallHadronCollider extends AContainer {
 				
 				ItemStack item = BlockStorage.getInventory(b).getItemInSlot(slot);
 				
-				if (SlimefunUtils.isItemSimilar(item,new CustomItem(SlimefunItems.URANIUM), true)) 
+				if (SlimefunUtils.isItemSimilar(item,new CustomItem(SlimefunItems. URANIUM),true)) 
 				{ 
 					slot_1_filled = true; 
 					slot_1 = slot;  
