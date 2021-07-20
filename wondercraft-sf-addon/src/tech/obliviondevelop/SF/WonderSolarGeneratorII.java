@@ -2,13 +2,16 @@ package tech.obliviondevelop.SF;
 
 import org.bukkit.Location;
 import org.bukkit.inventory.ItemStack;
+
+import io.github.thebusybiscuit.slimefun4.core.attributes.EnergyNetProvider;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
+import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AGenerator;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 
-public class WonderSolarGeneratorII extends AGenerator
+public class WonderSolarGeneratorII extends SlimefunItem implements EnergyNetProvider
 {
 	
 	public WonderSolarGeneratorII(Category category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
@@ -16,35 +19,16 @@ public class WonderSolarGeneratorII extends AGenerator
 
 	}
 
-	@Override
-	public int getCapacity() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    @Override
+    public final int getCapacity() {
+        return 0;
+    }
 
-	@Override
-	public String getInventoryTitle() {
-		// TODO Auto-generated method stub
-		return "Wonder Solar Generator II";
-	}
+    @Override
+    public final boolean isChargeable() {
+        return false;
+    }
 
-	@Override
-	public ItemStack getProgressBar() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int getEnergyProduction() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	protected void registerDefaultFuelTypes() {
-		// TODO Auto-generated method stub
-		
-	}
 
     @Override
     public int getGeneratedOutput(Location l, Config data) 

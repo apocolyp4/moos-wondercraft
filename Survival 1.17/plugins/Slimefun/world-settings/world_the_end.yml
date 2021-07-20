@@ -549,6 +549,7 @@ slimefun:
   ENHANCED_AUTO_CRAFTER: true
   ARMOR_AUTO_CRAFTER: true
   PRODUCE_COLLECTOR: true
+  TRIDENT: true
 wondercraftsfaddon:
   enabled: true
   COMPACTOR: true
@@ -748,3 +749,6 @@ wondercraftsfaddon:
   WONDER_MINER_ANDROID_IV: true
   MOOS_M_PICKAXE: true
   CONCRETE_MIXER: true
+  WONDER_SOLAR_GENERATOR: true
+  WONDER_SOLAR_GENERATOR_II: true
+  WONDER_SOLAR_GENERATOR_III: true

@@ -1750,6 +1750,7 @@ INDUSTRIAL_MINER:
   allow-enchanting: true
   allow-disenchanting: true
   can-mine-ancient-debris: false
+  can-mine-deepslate-ores: true
 ADVANCED_INDUSTRIAL_MINER:
   enabled: true
   can-be-used-in-workbenches: false
@@ -1757,6 +1758,7 @@ ADVANCED_INDUSTRIAL_MINER:
   allow-enchanting: true
   allow-disenchanting: true
   can-mine-ancient-debris: false
+  can-mine-deepslate-ores: true
 BOOTS_OF_THE_STOMPER:
   enabled: true
   can-be-used-in-workbenches: false
@@ -4893,6 +4895,30 @@ MOOS_M_PICKAXE:
   damage-on-use: true
   call-explosion-event: false
 CONCRETE_MIXER:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+TRIDENT:
+  enabled: true
+  can-be-used-in-workbenches: true
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+WONDER_SOLAR_GENERATOR:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+WONDER_SOLAR_GENERATOR_II:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+WONDER_SOLAR_GENERATOR_III:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false

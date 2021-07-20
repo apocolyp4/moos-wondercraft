@@ -3692,3 +3692,23 @@ CONCRETE_MIXER:
   lore:
   - '&rYou do not have the permission'
   - '&rto access this item.'
+TRIDENT:
+  permission: none
+  lore:
+  - '&rYou do not have the permission'
+  - '&rto access this item.'
+WONDER_SOLAR_GENERATOR:
+  permission: none
+  lore:
+  - '&rYou do not have the permission'
+  - '&rto access this item.'
+WONDER_SOLAR_GENERATOR_II:
+  permission: none
+  lore:
+  - '&rYou do not have the permission'
+  - '&rto access this item.'
+WONDER_SOLAR_GENERATOR_III:
+  permission: none
+  lore:
+  - '&rYou do not have the permission'
+  - '&rto access this item.'

@@ -146,6 +146,9 @@ messages:
     mode-change: '&b%device% mode changed to: &9%mode%'
     not-shears: '&cA Multi Tool cannot be used as shears!'
   auto-crafting:
+    recipe-unavailable: |
+      &cThis item is either disabled on your server, or you have not unlocked it yet.
+      &7Try crafting the item if you have not done this before to unlock the recipe.
     select-a-recipe: '&eCrouch and Right-Click &7this block with the item you want
       it to craft.'
     recipe-set: '&aYou have successfully set the recipe for this machine.'

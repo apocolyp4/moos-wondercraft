@@ -768,6 +768,9 @@ slimefun:
   portable_teleporter:
     cost: 42
     enabled: true
+  trident:
+    cost: 20
+    enabled: true
 wondercraftsfaddon:
   moos_suit:
     cost: 30
