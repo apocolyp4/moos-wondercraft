@@ -4838,6 +4838,8 @@ MOOS_ENHANCED_M_PICKAXE:
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  call-explosion-event: false
+  damage-on-use: true
 MOOINIUM:
   enabled: true
   can-be-used-in-workbenches: false

@@ -129,6 +129,4 @@ class MoosPickaxe extends ExplosiveTool
         damageItem(p, item);
     }
 
-
-
 }
