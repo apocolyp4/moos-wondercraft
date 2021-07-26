@@ -6,12 +6,18 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Creeper;
 import org.bukkit.entity.Player;
+import org.bukkit.entity.Skeleton;
+import org.bukkit.entity.WitherSkeleton;
+import org.bukkit.entity.Zombie;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
@@ -19,7 +25,8 @@ import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
-
+import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
+import io.github.thebusybiscuit.slimefun4.api.items.settings.IntRangeSetting;
 import io.github.thebusybiscuit.slimefun4.core.handlers.EntityKillHandler;
 import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
 
@@ -28,15 +35,14 @@ import tech.obliviondevelop.SF.Lists.WonderItems;
 
 public class MoosClaymore extends SimpleSlimefunItem<EntityKillHandler> implements Listener 
 {
-  
-	/*
-    //private final ItemSetting<Integer> chance = new ItemSetting<>("chance", 45);
-    private final ItemSetting<Integer> chanceZombie; = new ItemSetting<>("chance.ZOMBIE", 70);
-    private final ItemSetting<Integer> chanceSkeleton; = new ItemSetting<>("chance.SKELETON", 40);
-    private final ItemSetting<Integer> chanceCreeper; = new ItemSetting<>("chance.CREEPER", 25);
-    private final ItemSetting<Integer> chanceWitherSkeleton; = new ItemSetting<>("chance.WITHER_SKELETON", 40);
-    private final ItemSetting<Integer> chancePlayer = new ItemSetting<>("chance.PLAYERE", 40);
-*/
+        
+    private final ItemSetting<Integer> chanceZombie = new IntRangeSetting(this, "chance.ZOMBIE", 0, 70, 100);
+    private final ItemSetting<Integer> chanceSkeleton = new IntRangeSetting(this, "chance.SKELETON", 0, 40, 100);
+    private final ItemSetting<Integer> chanceCreeper = new IntRangeSetting(this, "chance.CREEPER", 0, 25, 100);
+    private final ItemSetting<Integer> chanceWitherSkeleton = new IntRangeSetting(this, "chance.WITHER_SKELETON", 0, 40, 100);   
+    private final ItemSetting<Integer> chancePlayer = new IntRangeSetting(this, "chance.PLAYER", 0, 40, 100);
+
+
 	
     public MoosClaymore(Category category) 
     {
@@ -49,14 +55,8 @@ public class MoosClaymore extends SimpleSlimefunItem<EntityKillHandler> implemen
         getItem().addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 5);
         getItem().addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 12);
         
-        //addItemSetting(chance);
-        /*
-        addItemSetting(chanceZombie);
-        addItemSetting(chanceSkeleton);
-        addItemSetting(chanceCreeper);
-        addItemSetting(chanceWitherSkeleton);
-        addItemSetting(chancePlayer);
-        */
+        addItemSetting(chanceZombie, chanceSkeleton, chanceWitherSkeleton, chanceCreeper, chancePlayer);
+        
 
     }
     
@@ -67,7 +67,7 @@ public class MoosClaymore extends SimpleSlimefunItem<EntityKillHandler> implemen
     	
         return (e, entity, killer, item) -> {
             Random random = ThreadLocalRandom.current();
-            /*
+           
             if (e.getEntity() instanceof Zombie) {
                 if (random.nextInt(100) < chanceZombie.getValue()) {
                     e.getDrops().add(new ItemStack(Material.ZOMBIE_HEAD));
@@ -97,7 +97,7 @@ public class MoosClaymore extends SimpleSlimefunItem<EntityKillHandler> implemen
 
                 e.getDrops().add(skull);
             }
-            */
+         
         };
         
     }

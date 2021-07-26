@@ -887,22 +887,22 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 		new SlimefunItem(MOOS_MISC, super_tnt, RecipeType.ENHANCED_CRAFTING_TABLE, item_recipe).register(this);	
 		
 		item_recipe = new ItemStack[] {null, null, null, WonderItems.HAZMAT_CLOTH, WonderItems.HAZMAT_CLOTH, WonderItems.HAZMAT_CLOTH, WonderItems.HAZMAT_CLOTH, WonderItems.VISOR, WonderItems.HAZMAT_CLOTH};
-		SlimefunItemStack hazmat_helmet = new SlimefunItemStack("HAZMAT_HELMET_2", WonderItems.HAZMAT_HELMET);
-		PotionEffect potion_effect1[] = {new PotionEffect(PotionEffectType.WATER_BREATHING, 300, 1)};
-		new SlimefunArmorPiece(MOOS_ARMOR, hazmat_helmet, RecipeType.ARMOR_FORGE, item_recipe, potion_effect1).register(this);		
+		SlimefunItemStack hazmat_helmet = new SlimefunItemStack("HAZMATSUIT_HELMET", WonderItems.HAZMAT_HELMET);
+		PotionEffect potion_effect1[] = {new PotionEffect(PotionEffectType.WATER_BREATHING, 300, 1)};		
+		new HazmatTask(MOOS_ARMOR, hazmat_helmet, RecipeType.ARMOR_FORGE, item_recipe, potion_effect1).register(this);		
 		
 		item_recipe = new ItemStack[] {WonderItems.HAZMAT_CLOTH, null, WonderItems.HAZMAT_CLOTH, WonderItems.HAZMAT_CLOTH, WonderItems.HAZMAT_CLOTH, WonderItems.HAZMAT_CLOTH, WonderItems.HAZMAT_CLOTH, WonderItems.HAZMAT_CLOTH, WonderItems.HAZMAT_CLOTH};
-		SlimefunItemStack hazmat_chest = new SlimefunItemStack("HAZMATSUIT_CHESTPLATE_2", WonderItems.HAZMATSUIT_CHESTPLATE);
+		SlimefunItemStack hazmat_chest = new SlimefunItemStack("HAZMATSUIT_CHESTPLATE", WonderItems.HAZMATSUIT_CHESTPLATE);
 		PotionEffect potion_effect2[] = {new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 300, 1)};
-		new SlimefunArmorPiece(MOOS_ARMOR, hazmat_chest, RecipeType.ARMOR_FORGE, item_recipe, potion_effect2).register(this);	
+		new HazmatTask(MOOS_ARMOR, hazmat_chest, RecipeType.ARMOR_FORGE, item_recipe, potion_effect2).register(this);	
 		
 		item_recipe = new ItemStack[] {WonderItems.HAZMAT_CLOTH, WonderItems.HAZMAT_CLOTH, WonderItems.HAZMAT_CLOTH, new ItemStack(Material.LEATHER), null, new ItemStack(Material.LEATHER), WonderItems.HAZMAT_CLOTH, null, WonderItems.HAZMAT_CLOTH};
-		SlimefunItemStack hazmat_leggings = new SlimefunItemStack("HAZMATSUIT_LEGGINGS_2", WonderItems.HAZMATSUIT_LEGGINGS);
-		new SlimefunItem(MOOS_ARMOR, hazmat_leggings, RecipeType.ARMOR_FORGE, item_recipe).register(this);	
+		SlimefunItemStack hazmat_leggings = new SlimefunItemStack("HAZMATSUIT_LEGGINGS", WonderItems.HAZMATSUIT_LEGGINGS);
+		new HazmatTask(MOOS_ARMOR, hazmat_leggings, RecipeType.ARMOR_FORGE, item_recipe, null).register(this);	
 		
 		item_recipe = new ItemStack[] {null, null, null, WonderItems.HAZMAT_CLOTH, null, WonderItems.HAZMAT_CLOTH, WonderItems.RUBBER, null, WonderItems.RUBBER};
-		SlimefunItemStack hazmat_boots  = new SlimefunItemStack("HAZMAT_BOOTS_2", WonderItems.HAZMAT_BOOTS);
-		new SlimefunItem(MOOS_ARMOR, hazmat_boots, RecipeType.ARMOR_FORGE, item_recipe).register(this);	
+		SlimefunItemStack hazmat_boots  = new SlimefunItemStack("HAZMATSUIT_BOOTS", WonderItems.HAZMAT_BOOTS);
+		new HazmatTask(MOOS_ARMOR, hazmat_boots, RecipeType.ARMOR_FORGE, item_recipe, null).register(this);	
 
 		
 		item_recipe = new ItemStack[] {null, null, null, null, new ItemStack(Material.WATER_BUCKET), null, new CustomItem(SlimefunItems.SULFATE), new CustomItem(SlimefunItems.SULFATE), new CustomItem(SlimefunItems.SULFATE)};
@@ -1120,7 +1120,7 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 		wonder_miner_android_iv.register(this);
 		
 		
-		//MoosHoe moos_hoes = new MoosHoe();
+		//MoosHoe moos_hoes = new MoosHoe(MOOS_TOOLS);
 		//moos_hoes.register(this);
 		
 		//PitchFork pitch_fork = new PitchFork(this, MOOS_TOOLS);
@@ -1401,6 +1401,7 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 		//getServer().getScheduler().runTaskTimerAsynchronously(this,  new HazmatTask(WonderItems.HAZMAT_HELMET, WonderItems.HAZMATSUIT_CHESTPLATE, WonderItems.HAZMATSUIT_LEGGINGS, WonderItems.HAZMAT_BOOTS), 0L, 10 * 20L);
 		//hazmat_task = new HazmatTask(WonderItems.HAZMAT_HELMET, WonderItems.HAZMATSUIT_CHESTPLATE, WonderItems.HAZMATSUIT_LEGGINGS, WonderItems.HAZMAT_BOOTS);
 		// Armor Update Task	
+		
 		String item_text;
 		ItemStack[] item_stack;
 		

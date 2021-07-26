@@ -144,7 +144,7 @@ public class WonderItems {
     public static ItemStack FRYER = new CustomItem(new ItemStack(Material.BONE_BLOCK), "&3Fryer", "&7Cook Yummy Food!");
     public static ItemStack ELECTRIC_SAW_MILL = new CustomItem(new ItemStack(Material.OAK_WOOD), "&bElectric Saw Mill", "&7Convert logs to planks");
     
-    public static ItemStack INDUSTRIAL_GRINDER = new CustomItem(new ItemStack(Material.DROPPER), "&bIndustrial Grinder", "&7Required to make dust from very hard materials");
+    public static ItemStack INDUSTRIAL_GRINDER = new CustomItem(new ItemStack(Material.STONECUTTER), "&bIndustrial Grinder", "&7Required to make dust from very hard materials");
     
     public static ItemStack NETHERITE_DUST = new CustomItem(Material.BROWN_DYE, "&bNetherite Dust");  
     

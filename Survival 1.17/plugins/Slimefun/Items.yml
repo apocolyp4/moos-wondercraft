@@ -4520,6 +4520,12 @@ MOOS_CLAYMORE:
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  chance:
+    ZOMBIE: 70
+    WITHER_SKELETON: 40
+    CREEPER: 25
+    SKELETON: 40
+    PLAYER: 40
 MOOS_CROSSBOW:
   enabled: true
   can-be-used-in-workbenches: false
@@ -4870,6 +4876,8 @@ WONDER_MINER_ANDROID_I:
   hide-in-guide: false
   allow-enchanting: true
   allow-disenchanting: true
+  reduced-block-updates: true
+  trigger-event-for-generators: false
 WONDER_MINER_ANDROID_II:
   enabled: true
   can-be-used-in-workbenches: false
@@ -4921,6 +4929,42 @@ WONDER_SOLAR_GENERATOR_II:
   allow-enchanting: true
   allow-disenchanting: true
 WONDER_SOLAR_GENERATOR_III:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+MOOS_M_HOE:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+PITCH_FORK:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+HAZMATSUIT_HELMET:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+HAZMATSUIT_CHESTPLATE:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+HAZMATSUIT_LEGGINGS:
+  enabled: true
+  can-be-used-in-workbenches: false
+  hide-in-guide: false
+  allow-enchanting: true
+  allow-disenchanting: true
+HAZMATSUIT_BOOTS:
   enabled: true
   can-be-used-in-workbenches: false
   hide-in-guide: false

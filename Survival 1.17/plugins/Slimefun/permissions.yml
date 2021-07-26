@@ -3712,3 +3712,33 @@ WONDER_SOLAR_GENERATOR_III:
   lore:
   - '&rYou do not have the permission'
   - '&rto access this item.'
+MOOS_M_HOE:
+  permission: none
+  lore:
+  - '&rYou do not have the permission'
+  - '&rto access this item.'
+PITCH_FORK:
+  permission: none
+  lore:
+  - '&rYou do not have the permission'
+  - '&rto access this item.'
+HAZMATSUIT_HELMET:
+  permission: none
+  lore:
+  - '&rYou do not have the permission'
+  - '&rto access this item.'
+HAZMATSUIT_CHESTPLATE:
+  permission: none
+  lore:
+  - '&rYou do not have the permission'
+  - '&rto access this item.'
+HAZMATSUIT_LEGGINGS:
+  permission: none
+  lore:
+  - '&rYou do not have the permission'
+  - '&rto access this item.'
+HAZMATSUIT_BOOTS:
+  permission: none
+  lore:
+  - '&rYou do not have the permission'
+  - '&rto access this item.'

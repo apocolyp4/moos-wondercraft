@@ -11,7 +11,7 @@ import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 
-public class IndustrialGrinder  extends AContainer 
+public class IndustrialGrinder extends AContainer 
 {
 	
 	private ItemStack NETHERITE_DUST = null;

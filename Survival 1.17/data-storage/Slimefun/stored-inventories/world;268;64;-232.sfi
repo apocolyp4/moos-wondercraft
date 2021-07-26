@@ -1,0 +1,41 @@
+preset: WONDER_MINER_ANDROID_I
+'16':
+  ==: org.bukkit.inventory.ItemStack
+  v: 2730
+  type: PLAYER_HEAD
+  meta:
+    ==: ItemMeta
+    meta-type: SKULL
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"Memory
+      Core"}],"text":""}'
+    lore:
+    - '{"text":""}'
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"⇨
+      "},{"italic":false,"color":"gray","text":"Click to open the Script Editor"}],"text":""}'
+    internal: H4sIAAAAAAAA/02Py06DQBhGf01NEH0C38EESsF0p4EmHQJTC5TL7LhMA8PQC4VGZuPWna/h0ifwRdz6GC5k6e58Od/myAAy3Pp1z/lzu99WnEowwWlDQTb9e3PfUqfKZJBHeaBtV9HTNUgdfen6lp5kALiQ4CpMeU/hkw62QuJSKWKb5wMyxh34Cl8hdnhAu3DITGSgZvTLJ8MZ5v++epdGOk80uyS7dZ81oeJoHqdLT82bzZlY+Ywwu8LTjUqCXMXM1Um00EiDtFVAmCvC2hWJkgivJgzNErYesIU5ZqTCIhmwKMok8hixRmYL4Yq82sbqHOAGLlExRkyOP9Lb793U+nh8f/1yjt8Af4xBcbMZAQAA
+    skull-owner: CS-CoreLib
+'17':
+  ==: org.bukkit.inventory.ItemStack
+  v: 2730
+  type: PLAYER_HEAD
+  meta:
+    ==: ItemMeta
+    meta-type: SKULL
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_red","text":"Pause"}],"text":""}'
+    internal: H4sIAAAAAAAA/02PT06DQByFf5qaIHoVE6CC6aILhWiHwODwt8MO6DQFZ2hDoSlsTdx4Bm/g0oOYmLj3Eq5l6fLle19engwgw2Xw1HH+2GzXJWcSTHAmGMhmcGVuG+aUuQzyCHesaUu2PwepZce2a9heBoATCc7ijHcMPlhvK+lyo6yWNi96ZIw5DBTuoWp3g+q4z01kIDHyxa3h9LN/Xb3NEp3Tqb1Ja9LlIlacqc/ZwlcLER3ckB7dgYvUuq9wSFX8EKlYRHoa+twV7jUV0TRNUE8FUWlFdC8hmju42uhpuMIiTWLuhbzEAxlwOG5YVEG1OluT+RzgAk7RajwyeS9ef78d1Xr7fP65e2m+AP4ApwAxJB0BAAA=
+    skull-owner: CS-CoreLib
+'20':
+  ==: org.bukkit.inventory.ItemStack
+  v: 2730
+  type: COBBLESTONE
+  amount: 2
+'15':
+  ==: org.bukkit.inventory.ItemStack
+  v: 2730
+  type: PLAYER_HEAD
+  meta:
+    ==: ItemMeta
+    meta-type: SKULL
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Start/Continue"}],"text":""}'
+    internal: H4sIAAAAAAAA/03PT06DQByG4Z+mJhX1ACZGT9BkWgKmSwNoZwKDhcq/jYEyDQxD21AQ4Rjewa3xLh7ArVdwJ0uXX55v80oAEpy7RSPEY7Xb5IKNYUTjkoGkuRNtVzEzTySQBtyzqs7Z4RTGNXutm4odJAA4GsOJF4uGwSfrCIqCDKUBEesOq8NeuUjYmO9v8dbrEg2ruBx8caea3fzfV6ljXxGhTLJou2yS0kOm7Ai2cKbr8umFPtwLixfI4qQI+bKleiqi0sltn2RhT3g0OPWNlvaGEvlYpj0pwxnltp5llEeFvTI6q8dtyC1kzaye6ka+CaZzgDM4xukQMdLfrr4uf5Xu4/vn/eLm+hngD11Q3TsZAQAA
+    skull-owner: CS-CoreLib

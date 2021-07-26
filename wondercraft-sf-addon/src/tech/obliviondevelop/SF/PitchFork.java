@@ -1,7 +1,11 @@
 package tech.obliviondevelop.SF;
 
 import java.util.ArrayList;
+import java.util.Optional;
+
+import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
@@ -10,6 +14,7 @@ import tech.obliviondevelop.SF.Lists.WonderItems;
 import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
 import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
 import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 
 public class PitchFork extends SimpleSlimefunItem<ItemUseHandler> implements NotPlaceable
@@ -32,21 +37,15 @@ public class PitchFork extends SimpleSlimefunItem<ItemUseHandler> implements Not
 		this.plugin = plugin;
 	}
 
-	@Override
-	public ItemUseHandler getItemHandler() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
 
-/*
+
     @Override
     public ItemUseHandler getItemHandler() 
     {
 
         return e ->
         {
-    		if (SlimefunUtils.isItemSimilar(item, WonderItems.PITCH_FORK, true) && PITCH_FORK_WHITELIST.contains(e.getClickedBlock().get().getType()))
+    		if (SlimefunUtils.isItemSimilar(getItem(), WonderItems.PITCH_FORK, true) && PITCH_FORK_WHITELIST.contains(e.getClickedBlock().get().getType()))
     		{
 	        	
 	            Optional<Block> block = e.getClickedBlock();
@@ -73,6 +72,6 @@ public class PitchFork extends SimpleSlimefunItem<ItemUseHandler> implements Not
             e.cancel();
         };
     }
-    */
+
 
 }

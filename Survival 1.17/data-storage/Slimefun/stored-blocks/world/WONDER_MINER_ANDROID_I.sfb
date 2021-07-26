@@ -1,0 +1,2 @@
+world;268;64;-232: '{"owner":"a4cad2db-f34d-4871-8e43-76d83a67e6e4","paused":"false","fuel":"0.0","rotation":"EAST","index":"0","id":"WONDER_MINER_ANDROID_I","script":"START-TURN_LEFT-DIG_DOWN-REPEAT"}'
+world;278;64;-211: '{"owner":"a4cad2db-f34d-4871-8e43-76d83a67e6e4","paused":"false","fuel":"0.0","rotation":"EAST","index":"2","id":"WONDER_MINER_ANDROID_I","script":"START-TURN_LEFT-DIG_DOWN-REPEAT"}'

@@ -47,7 +47,7 @@ public class WonderMinerAndroidI extends ProgrammableAndroid
 				RecipeType.ENHANCED_CRAFTING_TABLE, 
 				new ItemStack[] {SlimefunItems.POWER_CRYSTAL, WonderItems.PRINTED_CIRCUIT_BOARD, SlimefunItems.ANDROID_MEMORY_CORE, WonderItems.CHROMIUM_INGOT, SlimefunItems.PROGRAMMABLE_ANDROID_MINER, WonderItems.CHROMIUM_INGOT, WonderItems.WONDER_ALLOY, new ItemStack(Material.DIAMOND_PICKAXE), WonderItems.WONDER_ALLOY}
 				);
-        
+        	addItemSetting(firesEvent, applyOptimizations);
 	}
 
 	
@@ -70,27 +70,12 @@ public class WonderMinerAndroidI extends ProgrammableAndroid
                 if (event.isCancelled()) {
                     return;
                 }
-                
-                String item = BlockStorage.checkID(block);
-                
+
                 // We only want to break non-Slimefun blocks
-                if (item == null) 
-                {
-                    for (ItemStack drop : drops) 
-                    {
-                        if (menu.fits(drop, getOutputSlots())) {
-                        	for(int i=0;i<2;i++)
-                        	{
-                        		menu.pushItem(drop, getOutputSlots());
-                        	}
-                            block.getWorld().playEffect(block.getLocation(), Effect.STEP_SOUND, block.getType());
-                            breakBlock(menu, drops, block);
-                        }
-                    }
+                if (!BlockStorage.hasBlockInfo(block)) {
+                    block.getWorld().playEffect(block.getLocation(), Effect.STEP_SOUND, block.getType());
+                    breakBlock(menu, drops, block);
                 }
-                
-                
-                
             }
         }
     }
@@ -109,29 +94,12 @@ public class WonderMinerAndroidI extends ProgrammableAndroid
                     return;
                 }
 
-                
-                String item = BlockStorage.checkID(block);
-                
                 // We only want to break non-Slimefun blocks
-                if (item == null) {
-                    for (ItemStack drop : drops) {
-                        if (menu.fits(drop, getOutputSlots())) {
-                        	for(int i=0;i<2;i++)
-                        	{
-                        		menu.pushItem(drop, getOutputSlots());
-                        	}
-                            block.getWorld().playEffect(block.getLocation(), Effect.STEP_SOUND, block.getType());
-
-                            breakBlock(menu, drops, block);
-                            move(b, face, block);
-
-                            b.setType(Material.AIR);
-                            BlockStorage.moveBlockInfo(b.getLocation(), block.getLocation());
-                        }
-                    }
+                if (!BlockStorage.hasBlockInfo(block)) {
+                    block.getWorld().playEffect(block.getLocation(), Effect.STEP_SOUND, block.getType());
+                    breakBlock(menu, drops, block);
+                    move(b, face, block);
                 }
-                
-                
             } else {
                 move(b, face, block);
             }
@@ -141,14 +109,21 @@ public class WonderMinerAndroidI extends ProgrammableAndroid
     }
 
 	
-  
+    @ParametersAreNonnullByDefault
     private void breakBlock(BlockMenu menu, Collection<ItemStack> drops, Block block) 
     {
-        // Push our drops to the inventory
-        for (ItemStack drop : drops) {
-            menu.pushItem(drop, getOutputSlots());
+    	
+        
+        for (ItemStack drop : drops) 
+        {
+        	ItemStack temp_drop = drop.clone();
+        	
+        	for(int i=0;i<2;i++)
+        	{
+        		menu.pushItem(drop.clone(), getOutputSlots());
+        	}
         }
-
+        
         // Check if Block Generator optimizations should be applied.
         if (applyOptimizations.getValue()) {
             InfiniteBlockGenerator generator = InfiniteBlockGenerator.findAt(block);

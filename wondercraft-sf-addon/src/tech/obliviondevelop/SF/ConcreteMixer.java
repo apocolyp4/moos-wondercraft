@@ -25,12 +25,12 @@ public class ConcreteMixer extends AContainer {
 
 	@Override
 	public String getMachineIdentifier() {
-		return "CONCRETE_MACHINE";
+		return "CONCRETE_MIXER";
 	}
 
 	@Override
 	public String getInventoryTitle() {
-		return "&3Concrete Machine";
+		return "&3Concrete Mixer";
 	}
 
 	@Override
