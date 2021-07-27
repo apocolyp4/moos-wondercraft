@@ -968,3 +968,52 @@ wondercraftsfaddon:
   electric_purifier:
     cost: 30
     enabled: true
+wondercraftenchantsaddon:
+  enchanting_basics:
+    cost: 40
+    enabled: true
+  durability:
+    cost: 40
+    enabled: true
+  protection:
+    cost: 40
+    enabled: true
+  mending_book:
+    cost: 30
+    enabled: true
+  luck:
+    cost: 30
+    enabled: true
+  loot_bonus_blocks:
+    cost: 30
+    enabled: true
+  loot_bonus_mobs:
+    cost: 30
+    enabled: true
+  dig_speed:
+    cost: 30
+    enabled: true
+  thorns:
+    cost: 30
+    enabled: true
+  bows:
+    cost: 30
+    enabled: true
+  sweeping:
+    cost: 30
+    enabled: true
+  silk:
+    cost: 30
+    enabled: true
+  damage_undead:
+    cost: 30
+    enabled: true
+  quick_charge:
+    cost: 30
+    enabled: true
+  lure:
+    cost: 30
+    enabled: true
+  channeling:
+    cost: 30
+    enabled: true

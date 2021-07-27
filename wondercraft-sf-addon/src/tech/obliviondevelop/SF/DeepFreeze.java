@@ -1,5 +1,8 @@
 package tech.obliviondevelop.SF;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
@@ -7,16 +10,18 @@ import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
+import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 //import me.mrCookieSlime.Slimefun.api.energy.ChargableBlock;
 
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import tech.obliviondevelop.SF.Lists.WonderItems;
+import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 
-public class DeepFreeze extends AContainer {
+public class DeepFreeze extends AContainer implements RecipeDisplayItem{
 	
 	private ItemStack ICE_CREAM = null;
 	
@@ -34,6 +39,18 @@ public class DeepFreeze extends AContainer {
 			e.printStackTrace();
 		}
 	}
+	
+    @Override
+    public List<ItemStack> getDisplayRecipes() {
+        List<ItemStack> displayRecipes = new ArrayList<>(recipes.size() * 2);
+
+        for (MachineRecipe recipe : recipes) {
+            displayRecipes.add(recipe.getInput()[0]);
+            displayRecipes.add(recipe.getOutput()[recipe.getOutput().length - 1]);
+        }
+
+        return displayRecipes;
+    }
 
 	@Override
 	public int getSpeed()

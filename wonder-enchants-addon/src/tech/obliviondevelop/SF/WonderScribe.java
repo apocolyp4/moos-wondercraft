@@ -44,7 +44,7 @@ import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
-import me.mrCookieSlime.Slimefun.api.Slimefun;
+
 
 public class WonderScribe extends MultiBlockMachine
 {
@@ -95,7 +95,7 @@ public class WonderScribe extends MultiBlockMachine
         for (int i = 0; i < inputs.size(); i++) {
             if (isCraftable(inv, inputs.get(i))) {
                 ItemStack output = RecipeType.getRecipeOutputList(this, inputs.get(i)).clone();
-                if (Slimefun.hasUnlocked(p, output, true)) {
+                if (SlimefunUtils.canPlayerUseItem(p, output, true)) {
                     craft(inv, dispenser, p, b, output);
                 }
 

@@ -1,17 +1,22 @@
 package tech.obliviondevelop.SF;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.bukkit.Material;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.inventory.ItemStack;
 
+import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
+import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import tech.obliviondevelop.SF.Lists.WonderItems;
 
-public class ReAnimator extends AContainer  
+public class ReAnimator extends AContainer implements RecipeDisplayItem  
 {
 	// This is for customer head items
 	private ItemStack COW_SPAWN_EGG = null;
@@ -77,6 +82,19 @@ public class ReAnimator extends AContainer
 			e.printStackTrace();
 		}
 	}
+	
+    @Override
+    public List<ItemStack> getDisplayRecipes() {
+        List<ItemStack> displayRecipes = new ArrayList<>(recipes.size() * 2);
+
+        for (MachineRecipe recipe : recipes) {
+            displayRecipes.add(recipe.getInput()[0]);
+            displayRecipes.add(recipe.getOutput()[recipe.getOutput().length - 1]);
+        }
+
+        return displayRecipes;
+    }
+	
 	
 	public RecipeType asRecipeType() 
 	{

@@ -1,5 +1,7 @@
 package tech.obliviondevelop.SF;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import javax.annotation.Nonnull;
@@ -16,10 +18,11 @@ import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import tech.obliviondevelop.SF.Lists.WonderItems;
+import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 
-public class ElectricPurifierII extends AContainer {
+public class ElectricPurifierII extends AContainer implements RecipeDisplayItem{
 	
 	// This is for customer head items
 	private ItemStack PURE_ORE_CLUSTER = null;
@@ -59,6 +62,18 @@ public class ElectricPurifierII extends AContainer {
 			e.printStackTrace();
 		}
 	}
+	
+    @Override
+    public List<ItemStack> getDisplayRecipes() {
+        List<ItemStack> displayRecipes = new ArrayList<>(recipes.size() * 2);
+
+        for (MachineRecipe recipe : recipes) {
+            displayRecipes.add(recipe.getInput()[0]);
+            displayRecipes.add(recipe.getOutput()[recipe.getOutput().length - 1]);
+        }
+
+        return displayRecipes;
+    }
 	
 	public RecipeType asRecipeType() 
 	{

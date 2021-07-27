@@ -44,14 +44,7 @@ public class CoralCrusher extends MultiBlockMachine
 				category, 
 				new SlimefunItemStack("CORAL_CRUSHER", WonderMachines.CORAL_CRUSHER), 
 				new ItemStack[] {null, null, null, new ItemStack(Material.PRISMARINE_SLAB), new ItemStack(Material.IRON_BARS), new ItemStack(Material.PRISMARINE_SLAB), new ItemStack(Material.PRISMARINE_BRICKS), new CustomItem(Material.DISPENSER, "Dispenser (Facing up)"), new ItemStack(Material.PRISMARINE_BRICKS)},
-				new ItemStack[]
-				{
-					new ItemStack(Material.BRAIN_CORAL_BLOCK, 4), new ItemStack(WonderItems.BRAIN_CORAL_DUST),
-					new ItemStack(Material.BUBBLE_CORAL_BLOCK, 4), new ItemStack(WonderItems.BUBBLE_CORAL_DUST),
-					new ItemStack(Material.FIRE_CORAL_BLOCK, 4), new ItemStack(WonderItems.FIRE_CORAL_DUST),
-					new ItemStack(Material.HORN_CORAL_BLOCK, 4), new ItemStack(WonderItems.HORN_CORAL_DUST),
-					new ItemStack(Material.TUBE_CORAL_BLOCK, 4), new ItemStack(WonderItems.TUBE_CORAL_DUST),
-				},
+				new ItemStack[0],
 				BlockFace.SELF
 		);
 
@@ -59,6 +52,13 @@ public class CoralCrusher extends MultiBlockMachine
 		//Slimefun.registerResearch(new NamespacedKey(SlimefunPlugin.instance, "Coral_Crusher"), 600, "Coral_Crusher", 30, getItem());
 	}
 	
+	
+    @Override
+    protected void registerDefaultRecipes(List<ItemStack> recipes) 
+    {
+    	
+
+    }
 	
 	@Override
 	public List<ItemStack> getDisplayRecipes() {

@@ -41,11 +41,7 @@ public class WonderMachine extends MultiBlockMachine
 				category, 
 				new SlimefunItemStack("WONDER_MACHINE", WonderMachines.WONDER_MACHINE), 
 				new ItemStack[] {null, new ItemStack(Material.NETHER_BRICK_FENCE), null, new ItemStack(Material.EMERALD_BLOCK), new ItemStack(Material.DISPENSER), new ItemStack(Material.EMERALD_BLOCK), new ItemStack(Material.SEA_LANTERN), SlimefunItems.GOLD_24K_BLOCK, new ItemStack(Material.SEA_LANTERN)},
-				new ItemStack[] {new CustomItem(WonderItems.WONDER_DUST, 4), new CustomItem(WonderItems.WONDER_ALLOY), 
-						new CustomItem(WonderItems.WONDER_ALLOY, 4), new CustomItem(WonderItems.WONDER_ALLOY_BLOCK), 
-						new CustomItem(WonderItems.WONDER_ALLOY_BLOCK), new ItemStack(Material.NETHER_STAR), 
-						new CustomItem(SlimefunItems.CARBONADO, 9), WonderItems.CARBONADO_BLOCK,
-						WonderItems.CARBONADO_BLOCK, new CustomItem(SlimefunItems.CARBONADO, 9)},
+				new ItemStack[0] ,
 				BlockFace.DOWN
 		);
 	}

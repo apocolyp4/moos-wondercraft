@@ -170,7 +170,7 @@ public class WonderItems {
     public static ItemStack CARBON_COLLECTOR = new CustomItem(new ItemStack(Material.COAL_BLOCK), "&bCarbon Collector", "&7Use Mooinium to react with air", "&7to produce 32 carbon");
     public static ItemStack ELECTRIC_RECYCLER = new CustomItem(new ItemStack(Material.OBSERVER), "&bElectric Recycler", "&7Electric Recycler Machine", "&7Repurpose Slimefun junk");
 	
-    public static ItemStack YEAST = new CustomItem(Material.MELON_SEEDS, "&bYeast");
+    public static ItemStack YEAST = new CustomItem(Material.MELON_SEEDS, "&bWonder Yeast");
     public static ItemStack DOUGH = new CustomItem(getSkull("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmI2MzQwMWEzY2YzMmYyODVhZjdlZTJkMzBlZTMzMzBjMzMzYTk0NmU4ZjBhODE2OWVlMTBkNTcxZmI4MDdmIn19fQ=="), "&bDough");
     public static ItemStack TIN_CARROTS = new CustomItem(getSkull("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY1YzNiZGIzZDM2ZWVkNWNkZGY3NWIxZmI0NmRhZjhjMWZjODM0Mjg1NDBhMWU0YTZlNmQ2NjNlNWY4OWQ5OCJ9fX0="), "&bTin Carrots");
     public static ItemStack TIN_POTATOES = new CustomItem(getSkull("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU3MDhiMTNiYWZiNWE3NThkOWQyZjAxMzZmM2I3N2QxMzk1ODNiODZkNDY3ZGU4NmQyMTYyNmQwNDUzNGUifX19"), "&bTin Potatoes");

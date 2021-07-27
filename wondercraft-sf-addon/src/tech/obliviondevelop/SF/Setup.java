@@ -649,9 +649,9 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 		slimefun_stack = new SlimefunItemStack("POWER_PISTON", WonderItems.POWER_PISTON);
 		new SlimefunItem(HI_TECH_COMPONENTS, slimefun_stack, RecipeType.ENHANCED_CRAFTING_TABLE, item_recipe).register(this);
 		
-		item_recipe = new ItemStack[] {null, null, null, null, WonderItems.WONDER_ALLOY, null, null, null, null};
-		slimefun_stack = new SlimefunItemStack("WONDER_ALLOY_BLOCK", WonderItems.WONDER_ALLOY_BLOCK);
-		new SlimefunItem(MOOS_RESOURCES, slimefun_stack, WonderRecipeType.WONDER_MACHINE, item_recipe).register(this);		
+		//item_recipe = new ItemStack[] {null, null, null, null, WonderItems.WONDER_ALLOY, null, null, null, null};
+		//slimefun_stack = new SlimefunItemStack("WONDER_ALLOY_BLOCK", WonderItems.WONDER_ALLOY_BLOCK);
+		//new SlimefunItem(MOOS_RESOURCES, slimefun_stack, WonderRecipeType.WONDER_MACHINE, item_recipe).register(this);		
 		
 		item_recipe = new ItemStack[] {null, null, null, null, WonderItems.RAW_FRIES, null, null, null, null};
 		slimefun_stack = new SlimefunItemStack("MOOS_FRIES", WonderItems.MOOS_FRIES);
@@ -683,6 +683,9 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 		new SlimefunItem(EXPORTS, slimefun_stack, WonderRecipeType.FRYER, item_recipe).register(this);
 		*/
 		
+		item_recipe = new ItemStack[] {WonderItems.WONDER_ALLOY_BLOCK, null, null,null, null, null, null, null, null};
+		slimefun_stack = new SlimefunItemStack("NETHER_STAR", new ItemStack(Material.NETHER_STAR));
+		new SlimefunItem(MOOS_RESOURCES, slimefun_stack, RecipeType.PRESSURE_CHAMBER, item_recipe).register(this);	
 		
 		item_recipe = new ItemStack[] {SlimefunItems.FIRE_RUNE, new ItemStack(Material.NETHER_WART_BLOCK),null,null, null, null, null, null, null};
 		slimefun_stack = new SlimefunItemStack("MACE", WonderItems.MACE);
@@ -693,7 +696,7 @@ public class Setup extends JavaPlugin implements SlimefunAddon, Listener
 		new SlimefunItem(MOOS_MISC, slimefun_stack, RecipeType.ENHANCED_CRAFTING_TABLE, item_recipe).register(this);
 		
 		item_recipe = new ItemStack[] {null, null, null, null, new ItemStack(Material.BROWN_MUSHROOM), null, null, null, null};
-		slimefun_stack = new SlimefunItemStack("YEAST", WonderItems.YEAST);
+		slimefun_stack = new SlimefunItemStack("WONDER_YEAST", WonderItems.YEAST);
 		new SlimefunItem(MOOS_MISC, slimefun_stack, RecipeType.ENHANCED_CRAFTING_TABLE, item_recipe).register(this);
 		
 		item_recipe = new ItemStack[] {null, SlimefunItems.STEEL_INGOT, null, null, WonderItems.PRINTED_CIRCUIT_BOARD, null, null, WonderItems.COGWHEEL, null};

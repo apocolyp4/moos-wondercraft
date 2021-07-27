@@ -1,17 +1,22 @@
 package tech.obliviondevelop.SF;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
+import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.implementation.items.misc.OrganicFood;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.AContainer;
+import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import tech.obliviondevelop.SF.Lists.WonderItems;
 
-public class Fryer extends AContainer
+public class Fryer extends AContainer implements RecipeDisplayItem
 {
 	
 	private ItemStack DOUGH = null;
@@ -39,6 +44,18 @@ public class Fryer extends AContainer
 
 	}
 	
+    @Override
+    public List<ItemStack> getDisplayRecipes() {
+        List<ItemStack> displayRecipes = new ArrayList<>(recipes.size() * 2);
+
+        for (MachineRecipe recipe : recipes) {
+            displayRecipes.add(recipe.getInput()[0]);
+            displayRecipes.add(recipe.getOutput()[recipe.getOutput().length - 1]);
+        }
+
+        return displayRecipes;
+    }
+	
 	public RecipeType asRecipeType() 
 	{
 		return FRYER_Recipe;
@@ -62,8 +79,8 @@ public class Fryer extends AContainer
 	@Override
 	public void registerDefaultRecipes() 
 	{
-		registerRecipe(8, new ItemStack[] {WonderItems.RAW_FRIES}, new ItemStack[] { WonderItems.MOOS_FRIES });
-		registerRecipe(8, new ItemStack[] {WonderItems.DOUGH}, new ItemStack[] { WonderItems.DONUT});
+		//registerRecipe(8, new ItemStack[] {WonderItems.RAW_FRIES}, new ItemStack[] { WonderItems.MOOS_FRIES });
+		//registerRecipe(8, new ItemStack[] {WonderItems.DOUGH}, new ItemStack[] { WonderItems.DONUT});
 	}
 	
 	@Override

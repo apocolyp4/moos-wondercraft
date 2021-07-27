@@ -24,12 +24,13 @@ import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import tech.obliviondevelop.SF.Lists.WonderItems;
+import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 
-public class NetherMaker extends AContainer
+public class NetherMaker extends AContainer implements RecipeDisplayItem
 {
 	// This is for customer head items
 	private ItemStack NETHER_QUARTZ_ORE = null;
@@ -63,7 +64,17 @@ public class NetherMaker extends AContainer
 		}
 	}
 	
-	
+    @Override
+    public List<ItemStack> getDisplayRecipes() {
+        List<ItemStack> displayRecipes = new ArrayList<>(recipes.size() * 2);
+
+        for (MachineRecipe recipe : recipes) {
+            displayRecipes.add(recipe.getInput()[0]);
+            displayRecipes.add(recipe.getOutput()[recipe.getOutput().length - 1]);
+        }
+
+        return displayRecipes;
+    }
 	
 	public RecipeType asRecipeType() 
 	{
@@ -104,9 +115,9 @@ public class NetherMaker extends AContainer
 	@Override
 	public void registerDefaultRecipes() 
 	{
-		registerRecipe(4, new ItemStack[] {new ItemStack(Material.CLAY_BALL, 8)}, new ItemStack[] {SOULSAND});
-		registerRecipe(4, new ItemStack[] {new CustomItem(SlimefunItems.STONE_CHUNK, 2), new CustomItem(SlimefunItems.MAGNESIUM_DUST, 2)},  new ItemStack[] {NETHER_QUARTZ_ORE});
-		registerRecipe(4, new ItemStack[] {new ItemStack(Material.DIRT), new CustomItem(SlimefunItems.MAGNESIUM_DUST, 2)},  new ItemStack[] {NETHERRACK});
+		registerRecipe(5, new ItemStack[] {new ItemStack(Material.CLAY_BALL, 8)}, new ItemStack[] {SOULSAND});
+		registerRecipe(5, new ItemStack[] {new CustomItem(SlimefunItems.STONE_CHUNK, 2), new CustomItem(SlimefunItems.MAGNESIUM_DUST, 2)},  new ItemStack[] {NETHER_QUARTZ_ORE});
+		registerRecipe(5, new ItemStack[] {new ItemStack(Material.DIRT), new CustomItem(SlimefunItems.MAGNESIUM_DUST, 2)},  new ItemStack[] {NETHERRACK});
 	}
 	
 	/*

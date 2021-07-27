@@ -2,8 +2,8 @@ name: WondercraftEnchantsAddon
 version: 1.0
 author: OblivionDevelop
 website: http://obliviondeveloping.tech/
-depend: [CS-CoreLib, Slimefun]
+depend: [Slimefun]
 
-api-version: 1.13
+api-version: 1.17
 
 main: tech.obliviondevelop.SF.EnchantSetup
