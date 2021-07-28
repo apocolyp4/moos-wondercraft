@@ -79,8 +79,8 @@ public class Fryer extends AContainer implements RecipeDisplayItem
 	@Override
 	public void registerDefaultRecipes() 
 	{
-		//registerRecipe(8, new ItemStack[] {WonderItems.RAW_FRIES}, new ItemStack[] { WonderItems.MOOS_FRIES });
-		//registerRecipe(8, new ItemStack[] {WonderItems.DOUGH}, new ItemStack[] { WonderItems.DONUT});
+		registerRecipe(8, new ItemStack[] {WonderItems.RAW_FRIES}, new ItemStack[] { WonderItems.MOOS_FRIES });
+		registerRecipe(8, new ItemStack[] {WonderItems.DOUGH}, new ItemStack[] { WonderItems.DONUT});
 	}
 	
 	@Override
